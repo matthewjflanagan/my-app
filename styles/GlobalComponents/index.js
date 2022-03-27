@@ -30,7 +30,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: #f2f4db;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
@@ -60,7 +60,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #f2f4db;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -81,10 +81,8 @@ export const SectionDivider = styled.div`
   width: 64px;
   height: 6px;
   border-radius: 10px;
-  background-color: #fff;
-  background: ${(props) => props.colorAlt ? 
-    'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
-    'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background-color: #3e412e;
+  background: #3e412e;
 
     margin: ${(props) => props.divider ? "4rem 0" : "" };
 
@@ -103,7 +101,7 @@ export const SectionSubText = styled.p`
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #f2f4db;
 
 @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
@@ -117,9 +115,9 @@ export const SectionSubText = styled.p`
   }
 `
 export const SecondaryBtn = styled.button`
-  color: #FFF;
+  color: #f2f4db;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.33);
+  border: #f2f4db;
   box-sizing: border-box;
   border-radius: 999px;
   padding: 16px 24px;
@@ -136,14 +134,14 @@ export const SecondaryBtn = styled.button`
   }
 
   &:hover {
-    color: #0f1624;
-    background: #fff;
-    border: 1px solid #fff;
+    color: #f2f4db;
+    background: #3e412e;
+    border: 1px solid white;
   }
 
   &:active {
-    background: #e0e4eb;
-    border: 1px solid #304169;
+    background: ##3e412e;
+    border: 1px solid #f2f4db;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
@@ -202,14 +200,14 @@ export const ButtonBack = styled.div`
 export const ButtonFront = styled.button`
   border: none;
   border-radius: 50px;
-  color: #fff;
+  color: #3e412e;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: ${({ alt }) => alt ? '#3e412e' : '#f2f4db'};
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
@@ -231,7 +229,7 @@ export const ButtonFront = styled.button`
   }
 
   &:disabled{
-    background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+    background: #f2f4db;
     opacity: 0.5;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
@@ -253,7 +251,7 @@ export const LinkContainer = styled.div`
   padding: 8px;
 
   &:hover {
-    background-color: #212d45;
+    background-color: #f2f4db;
     transform: scale(1.2);
     cursor: pointer;
   }

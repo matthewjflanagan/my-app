@@ -54,10 +54,10 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #f2f4db;
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: #f2f4db;
     opacity: 1;
     cursor: pointer;
   }
@@ -75,7 +75,7 @@ export const ContactDropDown = styled.button`
   font-size: 1.7rem;
 
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #f2f4db;
   cursor: pointer;
   transition: 0.3s ease;
 
@@ -83,7 +83,7 @@ export const ContactDropDown = styled.button`
     outline: none;
   }
   &:hover {
-    color: #fff;
+    color: #f2f4db;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -117,11 +117,11 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
-color: white;
+color: #f2f4db;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
+    background-color: #3e412e;
     transform: scale(1.2);
     cursor: pointer;
     

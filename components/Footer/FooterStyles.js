@@ -17,14 +17,14 @@ export const FooterWrapper = styled.section`
 export const LinkItem = styled.a`
 	font-size: 18px;
 	line-height: 30px;
-	color: rgba(255, 255, 255, 0.75);
+	color: #f2f4db;
 	margin-bottom: 16px;
 	transition: .3s ease;
 	position: relative;
 	left: 0;
 
 	&:hover {
-		color: #fff;
+		color: #f2f4db;
 		left: 6px;
 	}
 
@@ -82,7 +82,7 @@ export const CompanyContainer = styled.div`
 
 
 export const Slogan = styled.p`
-	color: rgba(255, 255, 255, 0.5);
+	color: #f2f4db;
 	min-width: 280px;
 	letter-spacing: 0.02em;
 	font-size: 18px;
@@ -148,7 +148,7 @@ export const LinkTitle = styled.h4`
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.4);
+	color: #f2f4db;
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {

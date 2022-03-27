@@ -7,7 +7,7 @@ export const DropDownContainer = styled.div`
   right: -25%;
   top: 40px;
   width: 280px;
-  background-color: #fff;
+  background-color: #3e412e;
   border-radius: 8px;
   z-index: 100;
   padding: 4px 0;
@@ -61,14 +61,14 @@ export const DropDownTextContainer = styled.div`
 `
 
 export const DropDownItemTitle = styled.h2`
-  color: #0f1624;
+  color: #f2f4db;
   font-size: 18px;
   line-height: 26px;
   text-align: start;
 `
 
 export const DropDownItemDesc = styled.p`
-  color: #0f1624;
+  color: #f2f4db;
   opacity: 0.5;
   font-size: 14px;
   line-height: 22px;
