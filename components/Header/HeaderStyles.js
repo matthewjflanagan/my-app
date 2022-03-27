@@ -8,7 +8,7 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
-
+  background-image: linear-gradient(180deg, #f2f4db, #3e412e);
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -20,6 +20,8 @@ export const Container = styled.div`
 
 export const Span= styled.span`
   font-size: 2rem;
+  font-weight: 600;
+  color: #3e412e;
 `;
 
 export const Div1 = styled.div`
@@ -117,12 +119,13 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
+width: 5rem;
 color: #f2f4db;
-border-radius: 50px;
-  padding: 8px;
+border-radius: 10px;
+  padding: 2px;
 &:hover {
     background-color: #3e412e;
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
     
   }

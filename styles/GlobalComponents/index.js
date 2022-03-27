@@ -18,21 +18,17 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
-
     width: calc(100vw - 32px);
     flex-direction: column;
   }
 `
 
 export const SectionTitle = styled.h2`
-  font-weight: 800;
+  font-weight: 500;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: #f2f4db;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
 
@@ -56,9 +52,9 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 500;
   padding-bottom: 3.6rem;
   color: #f2f4db;
 
@@ -98,7 +94,7 @@ export const SectionDivider = styled.div`
 `
 export const SectionSubText = styled.p`
   max-width: 800px;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #f2f4db;
@@ -142,7 +138,6 @@ export const SecondaryBtn = styled.button`
   &:active {
     background: ##3e412e;
     border: 1px solid #f2f4db;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   @media ${(props) => props.theme.breakpoints.md}{
@@ -167,15 +162,18 @@ export const SecondaryBtn = styled.button`
 export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
-  border-radius: 50px;
+  padding: 2px;
+  &:hover {
+      transform: scale(1.05);
+    }
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
-  color: #fff;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
+  color: #3e412e;
+  background: #f2f4db;
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
@@ -199,7 +197,15 @@ export const ButtonBack = styled.div`
 
 export const ButtonFront = styled.button`
   border: none;
-  border-radius: 50px;
+  padding: 2px;
+  &:hover {
+      transform: scale(1.05);
+    }
+  font-size: ${({ alt }) => alt ? '20px' : '24px'};
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #3e412e;
   display: flex;
   position: absolute;
@@ -211,7 +217,7 @@ export const ButtonFront = styled.button`
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
-  font-weight: 600;
+  font-weight: 900;
   align-items: center;
   justify-content: center;
   cursor: pointer;

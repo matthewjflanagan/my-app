@@ -1,16 +1,16 @@
+
+
 export default {
   // Temp fonts
   fonts: {
-    title: "Candara, sans-serif",
-    main: "Candara, sans-serif"
+    title: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+    main: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
   },
   // Colors for layout
   colors: {
     primary1: "#f2f4db",
     background1: "#3e412e",
-    accent1: "#f2f4db",
     button: "#f2f4db",
-    background2: "#f2f4db",
   },
   // Breakpoints for responsive design
   breakpoints: {

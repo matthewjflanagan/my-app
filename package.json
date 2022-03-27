@@ -13,16 +13,18 @@
     "@sanity/image-url": "^1.0.1",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
+    "downshift": "^6.1.7",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-sanity": "^0.5.1",
+    "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7",
-    "react-icons": "^4.2.0"
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
     "eslint": "8.11.0",
