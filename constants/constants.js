@@ -38,7 +38,7 @@ export const projects = [
   {
     title: 'Squid Games',
     description: "After you win each game you will move on to the next round, lose a game and start over! Can you complete all the rounds of mini games?",
-    image: '/images/squid-games.png',
+    image: '/images/squid-games.PNG',
     tags: ['HTML', 'CSS', 'Javascript'],
     source: 'https://github.com/matthewjflanagan/Squid-Games',
     visit: 'https://matthewjflanagan.github.io/Squid-Games/',
@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'Vito Flanagan',
     description: "A website dedicated to pictures of Vito on his adventures!",
-    image: '/images/vito.png',
+    image: '/images/vito.PNG',
     tags: ['React', 'Next.js', 'Sanity.io'],
     source: 'https://photoalbum-two.vercel.app/',
     visit: 'https://matthewjflanagan.github.io/Squid-Games/',
