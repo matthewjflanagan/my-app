@@ -9,7 +9,9 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Menu right>
-        <Link id="blogs" className="menu-item" href="/Blogs" passHref><NavLink>Blogs</NavLink></Link>
+        <Link href={`/pages/Blogs/blog`}>
+          <a>Blogs</a>
+        </Link>
         <Link id="videos" className="menu-item" href="/Videos" passHref><NavLink>Videos</NavLink></Link>
         <Link id="contact" className="menu-item" href="/Contact" passHref><NavLink>Contact</NavLink></Link>
       </Menu>
