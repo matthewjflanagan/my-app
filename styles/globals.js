@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: #f2f4db;
+  transition: .5s;
 }
 
 /* Position and sizing of clickable cross button */

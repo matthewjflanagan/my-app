@@ -34,8 +34,8 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
   display: flex;
+  max-width: 800px;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
@@ -54,17 +54,18 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   line-height: 32px;
   color: #f2f4db;
-  transition: 0.4s ease;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 10px;
   &:hover {
-    color: #f2f4db;
-    opacity: 1;
+    background-color: #3e412e;
+    transform: scale(1.1);
     cursor: pointer;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    transition: .5s;
   }
 `;
 
@@ -135,6 +136,5 @@ border-radius: 10px;
     background-color: #3e412e;
     transform: scale(1.1);
     cursor: pointer;
-    
   }
 `
