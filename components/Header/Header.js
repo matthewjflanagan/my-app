@@ -4,16 +4,15 @@ import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { slide as Menu } from 'react-burger-menu'
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, SocialContainer, Span } from './HeaderStyles';
-import Button from '../../styles/GlobalComponents/Button';
 
 const Header = () =>  (
   <Container>
     <Div1>
-      <Link href="/">
-        <a style={{display: "flex", aligItems: "center", color: "white"}}>
-          <DiCssdeck size="3rem" color="#3e412e" /><Span>Matthew Flanagan</Span>
-        </a>
-      </Link>
+      <Menu right>
+        <Link id="blogs" className="menu-item" href="/Blogs" passHref><NavLink>Blogs</NavLink></Link>
+        <Link id="videos" className="menu-item" href="/Videos" passHref><NavLink>Videos</NavLink></Link>
+        <Link id="contact" className="menu-item" href="/Contact" passHref><NavLink>Contact</NavLink></Link>
+      </Menu>
     </Div1>
     <Div2>
       <li>
@@ -31,13 +30,6 @@ const Header = () =>  (
           <NavLink>About</NavLink>
         </Link>
       </li>
-      <li>
-      <Menu>
-        <Link id="blogs" className="menu-item" href="/Blogs" passHref>Blogs</Link>
-        <Link id="videos" className="menu-item" href="/Videos" passHref>Videos</Link>
-        <Link id="contact" className="menu-item" href="/Contact" passHref>Contact</Link>
-      </Menu>
-      </li>
     </Div2>
     <Div3>
     <SocialContainer>
@@ -52,7 +44,6 @@ const Header = () =>  (
       </SocialIcons>
       </SocialContainer>
     </Div3>
-    <Button id="react-burger-menu-btn">Open Menu</Button>
   </Container>
 );
 

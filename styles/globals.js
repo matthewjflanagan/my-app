@@ -31,7 +31,73 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
+  /* Position and sizing of burger button */
+.bm-burger-button {
+  margin: 15px 10px;
+  position: relative;
+  width: 36px;
+  height: 30px;
+}
 
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #3e412e;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #f2f4db;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #f2f4db;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #3e412e;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #3e412e;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 `;
 
 export default GlobalStyles;
