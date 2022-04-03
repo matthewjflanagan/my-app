@@ -1,8 +1,8 @@
 import React from 'react';
-
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, SocialIcons } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+import { AiFillGithub } from 'react-icons/ai';
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -11,7 +11,7 @@ const Projects = () => (
     <GridContainer>
       {projects.map(({ id, image, title, description, tags, source, visit}) => (
         <BlogCard key={id}>
-          <Img src={image}/>
+          <a href={visit}><Img src={image}/></a>
           <TitleContent>
             <HeaderThree title="true">{title}</HeaderThree>
             <Hr />
@@ -26,8 +26,9 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
-            <ExternalLinks href={source}>Source</ExternalLinks>
+            <SocialIcons href={source}>
+              <AiFillGithub size="3rem" />
+            </SocialIcons>
           </UtilityList>
         </BlogCard>
       ))}

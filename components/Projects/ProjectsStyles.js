@@ -5,6 +5,11 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: .5s;
+  }
 `
 
 export const GridContainer = styled.section`
@@ -88,21 +93,6 @@ export const UtilityList = styled.ul`
   margin: 2.5rem 0;
 `;
 
-export const ExternalLinks = styled.a`
-color:#3e412e;
-font-size: 1.3rem;
-font-weight:600;
-padding:1rem 1.5rem;
-background: #f2f4db;
-border-radius: 15px;
-transition: 0.5s;
-opacity: 0.8
-&:hover{
-  background: #f2f4db;
-  opacity: 1.0
-}
-`;
-
 export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
@@ -111,4 +101,22 @@ padding: 2rem;
 export const Tag = styled.li`
 color: #f2f4db;
 font-size: 1.5rem;
+`
+
+export const SocialIcons = styled.a`
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s ease;
+width: 100px;
+color: #3e412e;
+border-radius: 10px;
+padding: 2px;
+background-color: #f2f4db;
+&:hover {
+    background-color: #f2f4db;
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+  }
 `
