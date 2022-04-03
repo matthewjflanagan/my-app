@@ -117,7 +117,15 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 // Social Icons 
 
+export const SocialContainer = styled.div`
+	display: flex;
+	justify-content: center;
+`
+
 export const SocialIcons = styled.a`
+display: flex;
+justify-content: center;
+align-items: center;
 transition: 0.3s ease;
 width: 5rem;
 color: #f2f4db;

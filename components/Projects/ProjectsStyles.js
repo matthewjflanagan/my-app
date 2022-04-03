@@ -10,10 +10,10 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3 rem;
+padding: 3rem;
 place-items: center;
 column-gap: 2rem;
-row-gap: 3 rem;
+row-gap: 3rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #f2f4db;
   padding: .5rem 0;
-  font-size: ${(props) => props.title ? '3 rem' : '2rem'};
+  font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
 export const Hr = styled.hr`
@@ -74,7 +74,7 @@ export const CardInfo = styled.p`
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3 rem
+    padding:.3rem
   
 }
 `;

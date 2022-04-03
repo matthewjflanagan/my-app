@@ -2,14 +2,16 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
 	width: 100%;
-	padding: 2rem 48px 40px;
-	margin: 0rem auto;
+	max-width: 1040px;
+	padding: 0;
+	margin: 0;
 	box-sizing: content-box;
 	background-image: linear-gradient(180deg,#3e412e, #f2f4db);
 
   @media ${props => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
-    width: calc(100vw - 32px);
+    padding: 0;
+	margin: 0;
+    width: 100%;
   }
 `
 
@@ -102,13 +104,8 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-  align-items: center;
-
-	@media ${props => props.theme.breakpoints.md}{
-		justify-content: center;
-		padding-right: 16px;
-		flex-wrap: wrap;
-	}
+	justify-content: center;
+  	margin-bottom: 20px;
 `
 
 
@@ -138,6 +135,7 @@ export const LinkList = styled.ul`
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	max-width: 220px;
 	width: 100%;
 `
