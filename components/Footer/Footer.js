@@ -23,13 +23,13 @@ const Footer = () => {
         </CompanyContainer>
           <SocialContainer>
             <SocialIcons href="https://github.com/matthewjflanagan">
-              <AiFillGithub size="3 rem" />
+              <AiFillGithub size="3rem" />
             </SocialIcons>
             <SocialIcons href="https://www.linkedin.com/in/matthew-flanagan-13253a223/">
-              <AiFillLinkedin size="3 rem" />
+              <AiFillLinkedin size="3rem" />
             </SocialIcons>
             <SocialIcons href="https://youtube.com">
-              <AiFillYoutube size="3 rem" />
+              <AiFillYoutube size="3rem" />
             </SocialIcons>
           </SocialContainer>
       </SocialIconsContainer>

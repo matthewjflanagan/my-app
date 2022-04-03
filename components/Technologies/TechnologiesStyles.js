@@ -32,21 +32,21 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin: 3 rem 0;
+  margin: 3rem 15px;
   
   @media ${props => props.theme.breakpoints.lg}{
-    margin: 64px 0;
+    margin: 64px 15px;
   }
 
   @media ${props => props.theme.breakpoints.md}{
-    margin: 64px 0;
+    margin: 64px 15px;
     gap: 24px
   }
   
   @media ${props => props.theme.breakpoints.sm}{
     display: flex;
     flex-direction: column;
-    margin: 32px 0;
+    margin: 32px 10px;
   }
 `
 

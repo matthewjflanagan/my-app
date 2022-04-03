@@ -51,7 +51,7 @@ export const projects = [
     tags: ['React', 'Next.js', 'Sanity.io'],
     source: 'https://photoalbum-two.vercel.app/',
     visit: 'https://matthewjflanagan.github.io/Squid-Games/',
-    id: 4,
+    id: 5,
   },
 ];
 
