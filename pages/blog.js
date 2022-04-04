@@ -2,33 +2,31 @@ import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import { Section, SectionTitle } from '../../styles/GlobalComponents'
+import { Section, SectionTitle, SectionText } from '../styles/GlobalComponents'
+import { TagList } from '../components/Projects/ProjectsStyles'
 
-export default function Blog() {
+export default function Blog({ allPostsData }) {
   return (
   <Section>
   <Head>
-    <SectionTitle>Blogs</SectionTitle>
+    <SectionTitle>Welcome to my blogs posts!</SectionTitle>
   </Head>
-  <section className={utilStyles.headingMd}>
-    <p>Welcome to my blogs posts!</p>
-  </section>
-  <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-    <h2 className={utilStyles.headingLg}>Blog</h2>
-    <ul className={utilStyles.list}>
+  <SectionText>
+    <SectionTitle>Blog</SectionTitle>
+    <TagList>
       {allPostsData.map(({ id, date, title }) => (
-        <li className={utilStyles.listItem} key={id}>
+        <li key={id}>
           <Link href={`/posts/${id}`}>
             <a>{title}</a>
           </Link>
           <br />
-          <small className={utilStyles.lightText}>
+          <small>
             <Date dateString={date} />
           </small>
         </li>
       ))}
-    </ul>
-  </section>
+    </TagList>
+  </SectionText>
 </Section>
 )};
 

@@ -1,19 +1,16 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
 import { slide as Menu } from 'react-burger-menu'
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, SocialContainer, Span } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, SocialContainer } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <Div1>
       <Menu right>
-        <Link href={`/pages/Blogs/blog`}>
-          <a>Blogs</a>
-        </Link>
-        <Link id="videos" className="menu-item" href="/Videos" passHref><NavLink>Videos</NavLink></Link>
-        <Link id="contact" className="menu-item" href="/Contact" passHref><NavLink>Contact</NavLink></Link>
+        <Link className="menu-item" href='/blog' passHref><NavLink>Blogs</NavLink></Link>
+        <Link className="menu-item" href='/videos' passHref><NavLink>Videos</NavLink></Link>
+        <Link className="menu-item" href='/contact' passHref><NavLink>Contact</NavLink></Link>
       </Menu>
     </Div1>
     <Div2>

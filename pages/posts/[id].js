@@ -1,25 +1,24 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../../lib/posts'
+import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head';
-import Date from '../../../components/date';
-
+import Date from '../../components/date';
+import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents'
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <Section>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <Section>
+        <SectionTitle>{postData.title}</SectionTitle>
+        <SectionText>
           <Date dateString={postData.date} />
-        </div>
+        </SectionText>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </Layout>
-  )
-}
+      </Section>
+    </Section>
+  
+  )}
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
