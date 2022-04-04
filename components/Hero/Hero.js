@@ -7,7 +7,7 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Matthew Flanagan's <br />
+        Matthew Flanagan <br />
         Portfolio
       </SectionTitle>
       <SectionText>
