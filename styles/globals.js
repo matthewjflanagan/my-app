@@ -152,6 +152,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .lightText {
   color: #666;
 }
+
+.blogTitle {
+  text-align: center;
+  
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPost {
+  margin-bottom: 20px;
+  color: #f2f4db;
+}
+
+.blogLink {
+  color: #f2f4db;
+}
 `;
 
 export default GlobalStyles;

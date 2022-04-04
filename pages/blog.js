@@ -2,22 +2,21 @@ import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import { Section, SectionTitle, SectionText } from '../styles/GlobalComponents'
+import { Section, SectionText, SectionTitle } from '../styles/GlobalComponents';
 import { TagList } from '../components/Projects/ProjectsStyles'
 
 export default function Blog({ allPostsData }) {
   return (
   <Section>
   <Head>
-    <SectionTitle>Welcome to my blogs posts!</SectionTitle>
+    <title>Blogs</title>
   </Head>
-  <SectionText>
-    <SectionTitle>Blog</SectionTitle>
-    <TagList>
+  <SectionTitle className='blogTitle'>Welcome to my blogs posts!</SectionTitle>
+    <TagList className='blogContainer'>
       {allPostsData.map(({ id, date, title }) => (
-        <li key={id}>
+        <li className='blogPost' key={id}>
           <Link href={`/posts/${id}`}>
-            <a>{title}</a>
+            <a className='blogLink'>{title}</a>
           </Link>
           <br />
           <small>
@@ -26,7 +25,6 @@ export default function Blog({ allPostsData }) {
         </li>
       ))}
     </TagList>
-  </SectionText>
 </Section>
 )};
 
