@@ -11,7 +11,7 @@ export default function Blog({ allPostsData }) {
   <Head>
     <title>Blogs</title>
   </Head>
-  <SectionTitle className='blogTitle'>Welcome to my blogs posts!</SectionTitle>
+  <SectionTitle className='blogTitle'>Blogs</SectionTitle>
     <TagList className='blogContainer'>
       {allPostsData.map(({ id, date, title }) => (
         <li className='blogPost' key={id}>

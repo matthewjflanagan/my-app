@@ -5,16 +5,16 @@ import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponent
 
 export default function Post({ postData }) {
   return (
-    <Section>
+    <Section className='blogPage'>
       <Head>
         <title>{postData.title}</title>
       </Head>
       <Section>
-        <SectionTitle>{postData.title}</SectionTitle>
+        <SectionTitle className='blogTitle'>{postData.title}</SectionTitle>
         <SectionText>
           <Date dateString={postData.date} />
         </SectionText>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className='blogContent' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Section>
     </Section>
   

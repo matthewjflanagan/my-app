@@ -154,8 +154,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .blogTitle {
-  text-align: center;
-  
+  margin: 18px 0;
 }
 
 .blogContainer {
@@ -170,6 +169,36 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .blogLink {
   color: #f2f4db;
+  &:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+.blogPage {
+  padding: 5px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center:
+  align-items: center;
+}
+
+.blogContent {
+  padding: 10px;
+}
+
+.blogContent p {
+  margin-bottom: 15px;
+}
+
+.blogContent ul {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.blogContent li {
+  margin-bottom: 5px;
 }
 `;
 
