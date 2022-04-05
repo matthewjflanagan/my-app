@@ -6,6 +6,7 @@ export const CarouselContainer = styled.ul`
   border-radius: 10px;
   padding: 0rem;
   list-style:none;
+  box-shadow: 3px 3px 20px #f2f4db;
   display: flex;
   justify-content: space-between; 
   margin-left: 32px;
