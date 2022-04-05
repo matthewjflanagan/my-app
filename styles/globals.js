@@ -200,6 +200,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .blogContent li {
   margin-bottom: 5px;
 }
+
+.backToHome a {
+  margin: 0 1rem;
+  color: #f2f4db;
+  &:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
 `;
 
 export default GlobalStyles;

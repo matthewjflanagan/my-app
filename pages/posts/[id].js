@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head';
+import Link from 'next/link';
 import Date from '../../components/date';
 import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents'
 
@@ -15,9 +16,14 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </SectionText>
         <div className='blogContent' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className='backToHome'>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
       </Section>
     </Section>
-  
+
   )}
 
 export async function getStaticPaths() {
