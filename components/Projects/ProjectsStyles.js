@@ -4,6 +4,7 @@ export const Img = styled.img`
   width:100%;
   height:100%;
   object-fit: cover;
+  border-radius: 10px;
   overflow: hidden;
   &:hover {
     transform: scale(1.01);
@@ -29,11 +30,12 @@ row-gap: 3rem;
 `
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 3px 20px #f2f4db;
   text-align: center;
   width: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+    margin-bottom: 20px;
   }
 `;
 export const TitleContent = styled.div`
@@ -79,7 +81,7 @@ export const CardInfo = styled.p`
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
+    padding:1rem
   
 }
 `;
