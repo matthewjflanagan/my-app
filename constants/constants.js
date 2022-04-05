@@ -49,8 +49,8 @@ export const projects = [
     description: "A website dedicated to pictures of Vito on his adventures!",
     image: '/images/vito.PNG',
     tags: ['React', 'Next.js', 'Sanity.io'],
-    source: 'https://photoalbum-two.vercel.app/',
-    visit: 'https://matthewjflanagan.github.io/Squid-Games/',
+    source: 'https://github.com/matthewjflanagan',
+    visit: 'https://photoalbum-two.vercel.app/',
     id: 5,
   },
 ];
