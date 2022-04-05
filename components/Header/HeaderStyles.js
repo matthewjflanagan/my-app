@@ -2,20 +2,10 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
+  display: flex;
   padding: 1rem;
   padding-top: 2rem;
   background-image: linear-gradient(180deg, #f2f4db, #3e412e);
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
 `;
 
 export const Span= styled.span`
@@ -25,32 +15,29 @@ export const Span= styled.span`
 `;
 
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-content: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
-  }
 `;
 export const Div2 = styled.div`
   display: flex;
-  max-width: 800px;
-  justify-content: space-around;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
-  }
+  width: 100%;
+  justify-content: flex-end;
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
-  }
 `;
+
+// Links Container
+export const LinkContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+`
 
 // Navigation Links
 export const NavLink = styled.a`
@@ -58,7 +45,6 @@ export const NavLink = styled.a`
   font-weight: 600;
   line-height: 32px;
   color: #f2f4db;
-  margin: 0 1rem;
   padding: 1rem;
   border-radius: 10px;
   &:hover {
@@ -66,34 +52,6 @@ export const NavLink = styled.a`
     transform: scale(1.1);
     cursor: pointer;
     transition: .5s;
-  }
-`;
-
-/// DropDown Contact
-export const ContactDropDown = styled.button`
-  border: none;
-  display: flex;
-  position: relative;
-  background: none;
-  font-size: 1.7rem;
-
-  line-height: 32px;
-  color: #f2f4db;
-  cursor: pointer;
-  transition: 0.3s ease;
-
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    color: #f2f4db;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.4rem 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 0;
   }
 `;
 

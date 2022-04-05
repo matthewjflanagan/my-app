@@ -201,8 +201,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom: 5px;
 }
 
+.backToHome {
+  padding: 10px;
+}
+
 .backToHome a {
-  margin: 0 1rem;
   color: #f2f4db;
   &:hover {
     color: white;

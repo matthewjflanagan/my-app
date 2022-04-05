@@ -25,6 +25,11 @@ export default function Blog({ allPostsData }) {
         </li>
       ))}
     </TagList>
+    <div className='backToHome'>
+      <Link href="/">
+        <a>← Back to Home</a>
+      </Link>
+    </div>
 </Section>
 )};
 
