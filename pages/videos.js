@@ -1,3 +1,5 @@
+import { Layout } from '../layout/Layout';
+
 export default function Videos(){
-  return (<h1>video</h1>);
+  return (<Layout><h1>video</h1></Layout>);
 }

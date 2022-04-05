@@ -154,7 +154,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .blogTitle {
-  margin: 18px 0;
+  margin: 18px;
 }
 
 .blogContainer {

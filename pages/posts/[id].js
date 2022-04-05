@@ -3,9 +3,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Date from '../../components/date';
 import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents'
+import { Layout } from '../../layout/Layout';
 
 export default function Post({ postData }) {
   return (
+    <Layout>
     <Section className='blogPage'>
       <Head>
         <title>{postData.title}</title>
@@ -28,7 +30,7 @@ export default function Post({ postData }) {
         </div>
       </Section>
     </Section>
-
+</Layout>
   )}
 
 export async function getStaticPaths() {

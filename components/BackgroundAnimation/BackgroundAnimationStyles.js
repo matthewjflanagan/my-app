@@ -19,13 +19,12 @@ export const LinkContainer = styled.ul`
 export const NavLink = styled.a`
   font-size: 1.3rem;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 22px;
   color: #f2f4db;
   padding: 1rem;
   border-radius: 10px;
   &:hover {
-    background-color: #3e412e;
-    transform: scale(1.1);
+    color: white;
     cursor: pointer;
     transition: .5s;
   }
