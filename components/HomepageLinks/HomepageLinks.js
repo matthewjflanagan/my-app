@@ -1,8 +1,8 @@
 import React from 'react';
-import { Div2, LinkContainer, NavLink } from './BackgroundAnimationStyles';
+import { Div2, LinkContainer, NavLink } from './HomepageLinksStyles';
 import Link from 'next/link';
 
-const BackgroundAnimation = () => (
+const HomepageLinks = () => (
   <Div2>
   <LinkContainer>
   <li>
@@ -29,4 +29,4 @@ const BackgroundAnimation = () => (
   </Div2>
 );
 
-export default BackgroundAnimation;
+export default HomepageLinks;

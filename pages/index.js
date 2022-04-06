@@ -1,5 +1,4 @@
 import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
@@ -11,7 +10,6 @@ const Home = () => {
     <Layout>
       <Section grid>
         <Hero />
-        <BackgroundAnimation />
       </Section>
       <Timeline />
       <Technologies />

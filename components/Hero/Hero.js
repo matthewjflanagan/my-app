@@ -2,10 +2,12 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+import HomepageLinks from '../HomepageLinks/HomepageLinks';
 
 const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
+    <HomepageLinks />
       <SectionTitle main center>
         Matthew Flanagan <br />
         Portfolio

@@ -9,19 +9,16 @@ export const Div2 = styled.div`
 // Links Container
 export const LinkContainer = styled.ul`
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-
+  flex-wrap: wrap;
 `
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   line-height: 22px;
   color: #f2f4db;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 10px;
   &:hover {
     color: white;
