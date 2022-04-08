@@ -64,7 +64,6 @@ export const SectionText = styled.p`
 `
 
 export const SectionDivider = styled.div`
-
   width: 64px;
   height: 6px;
   border-radius: 10px;
@@ -200,7 +199,6 @@ export const ButtonFront = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: ${({ disabled }) => disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
 
   &:hover {
     opacity: 0;
@@ -210,13 +208,11 @@ export const ButtonFront = styled.button`
   }
   &:active {
     opacity: 1;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   &:disabled{
     background: #f2f4db;
     opacity: 0.5;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

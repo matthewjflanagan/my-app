@@ -45,6 +45,7 @@ export const NavLink = styled.a`
   font-weight: 600;
   line-height: 32px;
   color: #f2f4db;
+  margin: 0 .5rem;
   padding: 1rem;
   border-radius: 10px;
   &:hover {

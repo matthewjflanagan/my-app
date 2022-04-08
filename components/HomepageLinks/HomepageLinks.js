@@ -1,30 +1,20 @@
 import React from 'react';
-import { Div2, LinkContainer, NavLink } from './HomepageLinksStyles';
+import { Div2, LinkContainer, NavLink, LinkList } from './HomepageLinksStyles';
 import Link from 'next/link';
 
 const HomepageLinks = () => (
   <Div2>
   <LinkContainer>
-  <li>
-      <Link href="#about" passHref>
-        <NavLink>About</NavLink>
-      </Link>
-    </li>
-    <li>
+    <LinkList>
       <Link href="#tech" passHref>
-        <NavLink>Technologies</NavLink>
+        <NavLink>Technical Skills</NavLink>
       </Link>
-    </li> 
-    <li>
-      <Link href="#accomplishments" passHref>
-        <NavLink>Achievements</NavLink>
+    </LinkList> 
+    <LinkList>
+      <Link href="#about" passHref>
+        <NavLink>Professional Career</NavLink>
       </Link>
-    </li>
-    <li>
-      <Link href="#contact" passHref>
-        <NavLink>Contact Information</NavLink>
-      </Link>
-    </li>
+    </LinkList>
     </LinkContainer>
   </Div2>
 );

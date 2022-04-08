@@ -35,8 +35,6 @@ const GlobalStyles = createGlobalStyle`
 .bm-burger-button {
   margin: 15px 10px;
   position: relative;
-  width: 36px;
-  height: 30px;
 }
 
 /* Color/shape of burger icon bars */
@@ -57,9 +55,9 @@ const GlobalStyles = createGlobalStyle`
 }
 
 /* Color/shape of close button cross */
-.bm-cross {
-  background: #f2f4db;
-}
+// .bm-cross {
+//   background: #f2f4db;
+// }
 
 /*
 Sidebar wrapper styles
@@ -211,6 +209,24 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: white;
     cursor: pointer;
     transition: 0.5s;
+  }
+
+  .video-react-video, .video-react-poster {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-react-controls-enabled, .video-react-has-started, .video-react-paused, .video-react-fluid, .video-react-user-inactive, .video-react-workinghover, .video-react {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.vitoIcon {
+  &:hover {
+    cursor: pointer;
   }
 }
 `;

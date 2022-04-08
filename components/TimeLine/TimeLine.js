@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import Acomplishments from '../Acomplishments/Acomplishments';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
@@ -44,7 +44,7 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle>Professional Career</SectionTitle>
       <SectionText>
         Recently earned a certificate in full stack development from Georgia Tech University, with newly developed skills in creating responsive web designs.
       </SectionText>
@@ -110,7 +110,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
+      <Acomplishments />
     </Section>
   );
 };
