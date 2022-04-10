@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/Link';
+import Image from 'next/image'
 import { Layout } from '../../layout/Layout';
 import { sanityClient, urlFor, usePreviewSubscription, PortableText } from '../../lib/sanity';
 import { SectionTitle } from "../../styles/GlobalComponents"
@@ -27,14 +28,17 @@ if(router.isFallback) {
  const { chapters } = data;
  return (
      <Layout>
+        <Head>
+            <title>{chapters.name}</title>
+        </Head>
          <SectionTitle>{chapters.name}</SectionTitle>
          <div className='slugContainer'>
-             <img className='vitoImg' src={urlFor(chapters?.cover).url()}/>
+             <Image className='vitoImg' src={urlFor(chapters?.cover).url()}/>
                  <ul>
                      {chapters.photo?.map((photo) => (
                      <li className='slugContainer' key={photo._key}>
                          {" "}
-                         <img className='vitoImg' src={urlFor(photo?.photo?.image).url()}/>
+                         <Image className='vitoImg' src={urlFor(photo?.photo?.image).url()}/>
                      </li>
                      ))}
                  </ul>

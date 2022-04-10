@@ -1,5 +1,6 @@
 import { Layout } from '../layout/Layout';
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { sanityClient, urlFor } from "../lib/sanity"
 import { SectionTitle, SectionText } from "../styles/GlobalComponents"
@@ -29,7 +30,7 @@ export default function Contact( { chapters }){
             <SectionText>{chapters.name}</SectionText>
             <Link href={`/chapters/${chapters.slug.current}`}>
             <a className='vitoLink'>
-              <img className='vitoImg' src={urlFor(chapters.cover).url()} />
+              <Image className='vitoImg' src={urlFor(chapters.cover).url()} />
             </a>
             </Link>
           </li>
