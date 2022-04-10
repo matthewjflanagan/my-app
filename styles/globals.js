@@ -229,6 +229,48 @@ Note: Beware of modifying this element as it can break the animations - you shou
     cursor: pointer;
   }
 }
+
+.chapters-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+}
+
+.vitoLink {
+  text-decoration: none;
+  color: #3e412e;
+  font-size: 22px;
+  text-align: center;
+}
+
+.vitoImg {
+  width: 80%;
+  margin-bottom: 12px;
+  border: 0.5px solid #3e412e;
+}
+
+.photoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+}
+
+.photoList li {
+  list-style-type: none;
+}
+
+.slugContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
 `;
 
 export default GlobalStyles;
