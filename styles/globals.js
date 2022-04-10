@@ -293,7 +293,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 20px;
   margin: 2% 0;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
 }
 
 form {
@@ -302,27 +301,15 @@ form {
   max-width: 600px;
   text-align: center;
   margin: 20px auto;
-  font-family: 'Bebas Neue', cursive;
+  width: 90%;
 }
 
-/* Resume */
-
-.contactCardDiv {
-  font-family: 'Bebas Neue', cursive;
-  color: #f2f4db;
-  background-color: #3e412e;
+.inputs {
+  margin-bottom: 3px;
 }
 
-.contactCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cardContent a {
-  font-family: 'Bebas Neue', cursive;
-  color: #f2f4db;
-  text-decoration: none;
+#messageField {
+  height: 10vh;
 }
 }
 `;

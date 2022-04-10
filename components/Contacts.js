@@ -57,6 +57,7 @@ function Form() {
       <p>Send me a message! {name}</p>
       <form className="form">
         <input
+          className="inputs"
           value={email}
           name="email"
           onChange={handleInputChange}
@@ -64,14 +65,16 @@ function Form() {
           placeholder="E-mail"
         />
         <input
+          className="inputs"
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="name"
+          placeholder="Name"
         />
         <input 
-        id="messageField"
+          className="inputs"
+          id="messageField"
           value={message}
           name="message"
           onChange={handleInputChange}
