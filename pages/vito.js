@@ -30,7 +30,7 @@ export default function Contact( { chapters }){
             <SectionText>{chapters.name}</SectionText>
             <Link href={`/chapters/${chapters.slug.current}`}>
             <a className='vitoLink'>
-              <Image className='vitoImg' alt='chapter cover' src={urlFor(chapters.cover).url()} />
+              <img className='vitoImg' alt='chapter cover' src={urlFor(chapters.cover).url()} />
             </a>
             </Link>
           </li>

@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import vito from '../../public/images/vitoIcon.png'
+import hamburger from '../../public/images/hamburger.png'
+import cross from '../../public/images/cross.png'
 import React from 'react';
 import Image from 'next/image'
 import { slide as Menu } from 'react-burger-menu'
@@ -8,8 +11,8 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Menu 
-      customBurgerIcon={ <Image src="/images/hamburger.png" alt='hamburger'/> }
-      customCrossIcon={ <Image src="/images/cross.png" alt='cross'/> }
+      customBurgerIcon={ <Image src={hamburger} alt='hamburger' width={50} height={50}/> }
+      customCrossIcon={ <Image src={cross} alt='cross' width={50} height={50}/> }
       right>
       <Link className="menu-item" href='/' passHref><NavLink>Home</NavLink></Link>
       <Link className="menu-item" href='/project' passHref><NavLink>Projects</NavLink></Link>
@@ -20,7 +23,7 @@ const Header = () =>  (
       </Menu>
     </Div1>
     <Div2>
-      <Link href='/' passHref><Image className='vitoIcon' src="/images/vitoIcon.png" alt='vitoIcon' /></Link>
+      <Link href='/' passHref><Image className='vitoIcon'  src={vito} alt='vitoIcon' width={50} height={50} /></Link>
     </Div2>
   </Container>
 );
