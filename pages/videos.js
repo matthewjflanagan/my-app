@@ -1,15 +1,14 @@
 import React from 'react';
-import { Player } from 'video-react';
 import { Layout } from '../layout/Layout';
-import '../node_modules/video-react/dist/video-react.css';
+import { Section } from '../styles/GlobalComponents'
 
 export default function Videos(){
   return (
   <Layout>
-    <Player
-      playsInline
-      poster="/images/heroku.PNG"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    />
-  </Layout>);
+    <Section className='videoContainer'>
+    <iframe className='videoFrame' src="https://www.youtube.com/embed/0VEF-8gZBy4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <iframe className='videoFrame' src="https://www.youtube.com/embed/5Gi1uZu9tWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </Section>
+  </Layout>
+  );
 }

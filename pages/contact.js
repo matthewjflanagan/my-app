@@ -1,5 +1,6 @@
 import { Layout } from '../layout/Layout';
+import Contacts from '../components/Contacts'
 
 export default function Contact(){
-  return (<Layout><h1>contact</h1></Layout>)
+  return (<Layout><Contacts /></Layout>)
 }

@@ -29,8 +29,7 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "styled-components": "^5.0.0",
-    "styled-normalize": "^8.0.7",
-    "video-react": "^0.15.0"
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
     "eslint": "8.11.0",
