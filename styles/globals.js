@@ -300,6 +300,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 20px;
   margin: 2% 0;
   text-align: center;
+  width: 100%;
 }
 
 form {
@@ -312,11 +313,19 @@ form {
 }
 
 .inputs {
-  margin-bottom: 3px;
+  width: 80%
+  max-width: 1040px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 #messageField {
-  height: 10vh;
+  height: 30vh;
+}
+
+#submitBtn {
+  background-color: #f2f4db;
+  color: #3e412e;
 }
 }
 `;
