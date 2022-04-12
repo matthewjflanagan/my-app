@@ -9,6 +9,13 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;

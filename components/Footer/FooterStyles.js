@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
 	width: 100%;
-	max-width: 1040px;
 	padding: 0;
 	margin: 0;
 	box-sizing: content-box;
@@ -45,7 +44,6 @@ export const LinkItem = styled.a`
 `
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
 display: flex;
 justify-content: space-between;
 
