@@ -72,7 +72,7 @@ function Form() {
           type="text"
           placeholder="Name"
         />
-        <input 
+        <textarea 
           className="inputs"
           id="messageField"
           value={message}
@@ -80,7 +80,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Message"
-        />
+        ></textarea>
         <button id ="submitBtn" type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
