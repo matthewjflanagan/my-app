@@ -35,6 +35,7 @@ export const CarouselMobileScrollNode = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
     min-width: ${({ final }) => final ? `120%;` : `min-content`}
+    height: 100px;
   }
 `
 
@@ -57,7 +58,6 @@ export const CarouselItem = styled.div`
     border-radius: 3px;
     overflow: visible;
     position: relative;
-    height: fit-content;
     
     ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
   }

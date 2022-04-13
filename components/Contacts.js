@@ -1,7 +1,7 @@
 // export default ContactCard
 import React, { useState } from "react";
 import { validateEmail, validateMessage } from "../utils/helpers";
-
+import { Section, SectionTitle } from '../styles/GlobalComponents';
 
 function Form() {
   // Create state variables for the fields in the form
@@ -53,8 +53,8 @@ function Form() {
   };
 
   return (
-    <div className="contactForm">
-      <p>Send me a message! {name}</p>
+    <Section className="contactForm">
+      <SectionTitle>Contact Page</SectionTitle>
       <form className="form">
         <input
           className="inputs"
@@ -88,7 +88,7 @@ function Form() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-    </div>
+    </Section>
   );
 }
 

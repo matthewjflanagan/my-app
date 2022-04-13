@@ -38,6 +38,13 @@ main {
   li{
     list-style: none;
   }
+
+#about {
+  width: 100%;
+  max-width: 500px;
+}
+
+  
   /* Position and sizing of burger button */
 .bm-burger-button {
   margin: 15px 10px;
@@ -326,6 +333,7 @@ form {
 #submitBtn {
   background-color: #f2f4db;
   color: #3e412e;
+  padding: 5px;
 }
 }
 `;

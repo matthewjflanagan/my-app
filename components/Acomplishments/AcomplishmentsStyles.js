@@ -1,21 +1,16 @@
 import styled from "styled-components"
 
 export const Boxes = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 250px;
   gap: 24px;
   margin: 24px 0 40px;
 
   @media ${props => props.theme.breakpoints.md}{
     gap: 16px;
     margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 500px;
     margin: 24px auto;
@@ -27,7 +22,7 @@ export const Box = styled.div`
   background: #f2f4db;
   box-shadow: 0 0 5px #f2f4db;
   border-radius: 12px;
-  height: 144px;
+  height: 110px;
   padding: 24px;
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
@@ -35,35 +30,23 @@ export const Box = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    height: 135px;
+    height: 110px;
     padding: 16px;
   }
 
   @media ${props => props.theme.breakpoints.sm} {
     height: 110px;
     padding: 12px;
-    
-    &:nth-child(2n){
-      grid-row:2;
-    }
   }
 `
 export const BoxTitle = styled.h5`
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.01em;
   color: #3e412e;
   margin-bottom: 8px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 24px;
-    line-height: 26px;
 }
 `
 
@@ -91,20 +74,7 @@ export const Join = styled.div`
   max-width: 1040px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 80px;
-
-  @media ${props => props.theme.breakpoints.md}{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 64px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
-  }
+  padding-bottom: 32px;
 `
 
 export const JoinText = styled.h5`
