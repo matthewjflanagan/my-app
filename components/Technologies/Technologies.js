@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technical Skills</SectionTitle>
     <SectionText>
-      I have worked with a range of technologies in the from Back-End to Design
+      I have worked with a range of technologies in the from Back-End to Design with a focus on the MERN stack.
     </SectionText>
     <List>
       <ListItem>
@@ -18,7 +18,8 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            HTML, CSS, Bootstrap, JavaScript, JQuery<br />
+            React.js, Next.js, Handlebars
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,17 +29,19 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js and Databases
+            APIs, Node.js, Express.js, <br />
+            SQL, Sequalize, Mongo.db, GraphQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiZend size="3rem" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Additional technologies</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            Experience with tools like<br />
+            Figma, Sanity.io, Groq <br />
+            Heroku, Insomnia
           </ListParagraph>
         </ListContainer>
       </ListItem>
