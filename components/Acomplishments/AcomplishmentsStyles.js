@@ -1,21 +1,11 @@
 import styled from "styled-components"
 
 export const Boxes = styled.div`
-  width: 250px;
-  gap: 24px;
-  margin: 24px 0 40px;
-
-  @media ${props => props.theme.breakpoints.md}{
-    gap: 16px;
-    margin: 20px 0 32px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    gap: 10px;
-    max-width: 500px;
-    margin: 24px auto;
-    padding: 0 15px;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
 `
 
 export const Box = styled.div`
@@ -23,21 +13,9 @@ export const Box = styled.div`
   box-shadow: 0 0 5px #f2f4db;
   border-radius: 12px;
   height: 110px;
-  padding: 24px;
-  @media ${props => props.theme.breakpoints.lg} {
-    height: 210px;
-
-  }
-
-  @media ${props => props.theme.breakpoints.md} {
-    height: 110px;
-    padding: 16px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    height: 110px;
-    padding: 12px;
-  }
+  width: 210px;
+  padding: 12px;
+  margin: 10px 0;
 `
 export const BoxTitle = styled.h5`
   font-style: normal;

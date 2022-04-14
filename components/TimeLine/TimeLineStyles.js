@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
-  max-width: 1040px;
+  max-width: 500px;
   background: #f2f4db;
   border-radius: 10px;
-  padding: 0rem;
+  padding: 2rem;
   list-style:none;
   box-shadow: 3px 3px 20px #f2f4db;
   display: flex;
@@ -35,7 +35,6 @@ export const CarouselMobileScrollNode = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
     min-width: ${({ final }) => final ? `120%;` : `min-content`}
-    height: 100px;
   }
 `
 
@@ -58,6 +57,7 @@ export const CarouselItem = styled.div`
     border-radius: 3px;
     overflow: visible;
     position: relative;
+    height: fit-content;
     
     ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
   }

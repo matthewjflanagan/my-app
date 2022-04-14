@@ -5,19 +5,16 @@ import { LeftSection } from './HeroStyles';
 import HomepageLinks from '../HomepageLinks/HomepageLinks';
 
 const Hero = (props) => (
-  <Section row nopadding>
-    <LeftSection>
+  <Section>
     <HomepageLinks />
-      <SectionTitle main center>
-        Matthew Flanagan <br />
-        Portfolio
+      <SectionTitle>
+        Matthew Flanagan Portfolio
       </SectionTitle>
       <SectionText>
       Below you will find a few of my favorite projects, technologies I am interested in, and a brief history of the past 5 years in my professional life. 
       </SectionText>
       <Button onClick={() => window.location = '/images/Resume.pdf'}>Resume</Button>
       <Button onClick={() => window.location = '/images/certificate.pdf'}>Certifcate</Button>
-    </LeftSection>
   </Section>
 );
 

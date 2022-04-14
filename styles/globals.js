@@ -40,10 +40,12 @@ main {
   }
 
 #about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
-
   
   /* Position and sizing of burger button */
 .bm-burger-button {
