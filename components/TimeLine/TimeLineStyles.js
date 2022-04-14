@@ -23,6 +23,7 @@ export const CarouselContainer = styled.ul`
    }
 
   @media ${props => props.theme.breakpoints.sm} {
+    width: 95%;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
