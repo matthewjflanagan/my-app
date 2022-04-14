@@ -37,7 +37,7 @@ const Technologies = () =>  (
       <ListItem>
         <DiZend size="3rem" />
         <ListContainer>
-          <ListTitle>Additional technologies</ListTitle>
+          <ListTitle>Additional</ListTitle>
           <ListParagraph>
             Experience with tools like<br />
             Figma, Sanity.io, Groq <br />
