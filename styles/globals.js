@@ -264,6 +264,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .vitoImg {
   width: 80%;
+  max-width: 600px;
   margin-bottom: 12px;
   border: 0.5px solid #3e412e;
 }
