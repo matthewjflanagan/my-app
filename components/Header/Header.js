@@ -18,7 +18,7 @@ const Header = () =>  (
       <Link className="menu-item" href='/project' passHref><NavLink>Projects</NavLink></Link>
         <Link className="menu-item" href='/blog' passHref><NavLink>Blogs</NavLink></Link>
         <Link className="menu-item" href='/videos' passHref><NavLink>Videos</NavLink></Link>
-        <Link className="menu-item" href='/vito' passHref><NavLink>The Life of Vito</NavLink></Link>
+        <Link className="menu-item" href='/vito' passHref><NavLink>The Dogfather</NavLink></Link>
         <Link className="menu-item" href='/contact' passHref><NavLink>Contact</NavLink></Link>
       </Menu>
     </Div1>
