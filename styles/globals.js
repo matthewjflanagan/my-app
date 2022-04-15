@@ -338,6 +338,21 @@ form {
   color: #3e412e;
   padding: 5px;
 }
+
+.zoom-wrapper div {
+  justify-content: center;
+}
+
+.slide-container {
+  width: 90%;
+}
+
+.slide-container img {
+  max-height: 200px;
+  width: fit-content;
+  max-width: 600px;
+  align-self: center;
+}
 }
 `;
 

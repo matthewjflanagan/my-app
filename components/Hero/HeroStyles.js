@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const LeftSection = styled.div`
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
+export const Img = styled.img`
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
   }
-`;
+`

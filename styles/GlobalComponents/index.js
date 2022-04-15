@@ -29,6 +29,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
+  margin-top: 10px;
   margin-left: 15px;
   font-size: 18px;
   line-height: 40px;

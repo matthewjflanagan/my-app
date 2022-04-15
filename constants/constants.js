@@ -39,7 +39,7 @@ export const projects = [
     title: 'Note Taker',
     description: "Keep track of all your most important notes for class in one site! Add and delete notes with a Title & Header",
     image: '/images/notetaker.png',
-    tags: ['HTML', 'CSS', 'Javascript', 'Express.js', 'Heroku'],
+    tags: ['HTML', 'CSS', 'Javascript', 'Express.js'],
     source: 'https://github.com/matthewjflanagan/Note-Taker',
     visit: 'https://cryptic-caverns-53634.herokuapp.com/',
     id: 4,
