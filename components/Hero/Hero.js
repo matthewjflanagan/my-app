@@ -44,7 +44,8 @@ const Hero = (props) => (
       Below you will find a few of my favorite projects, technologies I am interested in, and a brief history of the past 5 years in my professional life. 
       </SectionText>
       <Button onClick={() => window.location = '/images/Resume.pdf'}>Resume</Button>
-      <Button onClick={() => window.location = '/images/certificate.pdf'}>Certificate</Button>
+      <Button onClick={() => window.location = '/images/certificate.pdf'}>Georgia Tech Certificate</Button>
+      <Button onClick={() => window.location = '/images/USC_eDiploma.pdf'}>USC Diploma</Button>
   </Section>
 );
 
