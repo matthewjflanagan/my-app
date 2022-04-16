@@ -36,12 +36,12 @@ export const projects = [
     id: 3,
   },
   {
-    title: 'Note Taker',
-    description: "Keep track of all your most important notes for class in one site! Add and delete notes with a Title & Header",
+    title: 'JOBS 4 MORE',
+    description: "Search for your dream job by filter entering in your desired location, job type, and experience! JOBS 4 MORE will direct you to all the results matching your criteria where you can click on them to find out more information about each job. ",
     image: '/images/notetaker.png',
-    tags: ['HTML', 'CSS', 'Javascript', 'Express.js'],
-    source: 'https://github.com/matthewjflanagan/Note-Taker',
-    visit: 'https://cryptic-caverns-53634.herokuapp.com/',
+    tags: ['HTML', 'CSS', 'Javascript', 'Third-party API'],
+    source: 'https://github.com/matthewjflanagan/JOBS-4-MORE',
+    visit: 'https://matthewjflanagan.github.io/JOBS-4-MORE/',
     id: 4,
   },
 
