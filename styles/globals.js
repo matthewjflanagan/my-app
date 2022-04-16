@@ -263,10 +263,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .vitoImg {
-  width: 80%;
-  max-width: 600px;
-  margin-bottom: 12px;
-  border: 0.5px solid #3e412e;
+  object-fit: contain;
+  object-position: 50% 50%;
 }
 
 .photoList {
@@ -286,6 +284,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 10px;;
 }
 
 .videoContainer {

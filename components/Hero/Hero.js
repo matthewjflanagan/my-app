@@ -33,7 +33,9 @@ const Hero = (props) => (
           {images.map((each, index) => (
             <Image 
             key={index} 
-            style={{ width: "100%" }} 
+            width='250'
+            height='250'
+            className='vitoImg'
             src={each} />
           ))}
         </Zoom>

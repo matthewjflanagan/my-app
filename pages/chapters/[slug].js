@@ -34,12 +34,12 @@ if(router.isFallback) {
         </Head>
          <SectionTitle>{chapters.name}</SectionTitle>
          <div className='slugContainer'>
-             <img className='vitoImg' alt='chapter cover' src={urlFor(chapters?.cover).url()}/>
+             <Image className='vitoImg' alt='chapter cover' src={urlFor(chapters?.cover).url()} width='400' height='400'/>
                  <ul>
                      {chapters.photo?.map((photo) => (
                      <li className='slugContainer' key={photo._key}>
                          {" "}
-                         <img className='vitoImg' alt='chapter photo array' src={urlFor(photo?.photo?.image).url()}/>
+                         <Image className='vitoImg' alt='chapter photo array' src={urlFor(photo?.photo?.image).url()} width='400' height='400'/>
                      </li>
                      ))}
                  </ul>
