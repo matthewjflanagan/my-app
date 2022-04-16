@@ -140,12 +140,12 @@ export const SecondaryBtn = styled.button`
 `
 
 export const ButtonBack = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 32px;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 20px;
   padding: 3px 0;
-  margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
+  margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -159,10 +159,9 @@ export const ButtonBack = styled.div`
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    width: 300px;
     height: 32px;
     font-size: 18px;
-    margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
   }
 `
 

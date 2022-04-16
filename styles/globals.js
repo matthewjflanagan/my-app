@@ -296,9 +296,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .videoFrame {
-  width: 100%;
-  max-width: 560px;
-  height: 315px;
+  width: 400px;
+  height: 225px;
   margin-bottom: 10px;
 }
 

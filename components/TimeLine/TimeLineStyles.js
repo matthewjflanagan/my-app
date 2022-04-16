@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
-  max-width: 500px;
+  width: 500px;
+  height: 160px;
   background: #f2f4db;
   border-radius: 10px;
   padding: 2rem;
@@ -13,8 +14,11 @@ export const CarouselContainer = styled.ul`
   &:first-of-type{
     margin: 0 10px;
   }
-
-  margin-bottom: 80px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  touch-action: pan-x;
+  justify-content: initial;
 
   //remove scrollbar
   scrollbar-width: none;  
@@ -23,12 +27,8 @@ export const CarouselContainer = styled.ul`
    }
 
   @media ${props => props.theme.breakpoints.sm} {
-    width: 95%;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    touch-action: pan-x;
-    justify-content: initial;
+    width: 300px;
+    height: 100px;
     margin-bottom: 8px;
   }
 `
