@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
+import { ButtonBack } from '../../styles/GlobalComponents';
 import HomepageLinks from '../HomepageLinks/HomepageLinks';
 import Image from 'next/image';
 import { Zoom } from "react-slideshow-image";
@@ -43,9 +43,9 @@ const Hero = (props) => (
       <SectionText>
       Below you will find the technologies I have experience in, my professional acheivements, and points of interest about me. 
       </SectionText>
-      <Button onClick={() => window.location = '/images/Resume.pdf'}>Resume</Button>
-      <Button onClick={() => window.location = '/images/certificate.pdf'}>Georgia Tech Certificate</Button>
-      <Button onClick={() => window.location = '/images/USC_eDiploma.pdf'}>USC Diploma</Button>
+      <ButtonBack onClick={() => window.location = '/images/Resume.pdf'}>Resume</ButtonBack>
+      <ButtonBack onClick={() => window.location = '/images/certificate.pdf'}>Georgia Tech Certificate</ButtonBack>
+      <ButtonBack onClick={() => window.location = '/images/USC_eDiploma.pdf'}>USC Diploma</ButtonBack>
   </Section>
 );
 

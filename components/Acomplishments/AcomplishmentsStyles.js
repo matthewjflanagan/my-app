@@ -20,14 +20,10 @@ export const Box = styled.div`
 export const BoxTitle = styled.h5`
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: 0.01em;
   color: #3e412e;
-
-  @media ${props => props.theme.breakpoints.sm}{
-    font-size: 16px;
-  };
 }
 `
 

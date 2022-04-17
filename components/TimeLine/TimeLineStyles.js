@@ -5,7 +5,7 @@ export const CarouselContainer = styled.ul`
   height: 160px;
   background: #f2f4db;
   border-radius: 10px;
-  padding: 1rem;
+  padding: .5rem 1rem;
   list-style:none;
   box-shadow: 3px 3px 20px #f2f4db;
   display: flex;
