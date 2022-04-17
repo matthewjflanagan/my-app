@@ -262,7 +262,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
 }
 
-.vitoImg img {
+.vitoImg {
   object-fit: contain;
   object-position: 50% 50%;
 }
