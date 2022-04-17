@@ -155,6 +155,7 @@ export const ButtonBack = styled.div`
   transition: 0.5s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 5px #f2f4db;
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
 
   @media ${(props) => props.theme.breakpoints.sm} {

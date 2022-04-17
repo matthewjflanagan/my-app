@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Section, SectionTitle, SectionSubText } from '../styles/GlobalComponents'
 
 export const ContactUs = () => {
   const form = useRef();
@@ -16,15 +17,19 @@ export const ContactUs = () => {
   };
 
   return (
+    <Section>
+      <SectionTitle>Contact Page</SectionTitle>
+      <SectionSubText>If you have any further questions or would like to speak with me please send me a message with the best way to contact you!</SectionSubText>
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <label className='contactForm'>Name</label>
+      <input className='inputs' type="text" name="user_name" />
+      <label className='contactForm'>Email</label>
+      <input className='inputs' type="email" name="user_email" />
+      <label className='contactForm'>Message</label>
+      <textarea className='inputs' id='messageField' name="message" />
+      <input id='submitBtn' type="submit" value="Send" />
     </form>
+    </Section>
   );
 };
 

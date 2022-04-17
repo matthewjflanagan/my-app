@@ -262,7 +262,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
 }
 
-.vitoImg {
+.vitoImg img {
   object-fit: contain;
   object-position: 50% 50%;
 }
@@ -325,31 +325,58 @@ form {
   max-width: 1040px;
   margin-bottom: 5px;
   padding: 5px;
+  background-color: #f2f4db;
+  color: #3e412e;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f2f4db;
+  border-style: none;
 }
 
 #messageField {
   height: 30vh;
+  background-color: #f2f4db;
+  color: #3e412e;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f2f4db;
+  border-style: none;
 }
 
 #submitBtn {
+  margin-top: 10px;
   background-color: #f2f4db;
   color: #3e412e;
   padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f2f4db;
+  font-weight: 799;
+  border-style: none;
 }
 
 .zoom-wrapper div {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .slide-container {
-  width: 90%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 5px;
+  border: 3px solid #f2f4db;
+  box-shadow: 0 0 5px #f2f4db;
 }
 
 .slide-container img {
-  max-height: 200px;
+  min-width: 244px;
   width: fit-content;
-  max-width: 600px;
   align-self: center;
+}
+
+.indicators, .default-nav {
+  display: none;
+  visibility: hidden;
 }
 }
 `;
