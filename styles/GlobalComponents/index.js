@@ -15,7 +15,7 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 500;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-size: ${(props) => props.main ? '28px' : '32px'};
   width: max-content;

@@ -13,21 +13,20 @@ export const Box = styled.div`
   box-shadow: 0 0 5px #f2f4db;
   border-radius: 12px;
   height: 100px;
-  width: 200px;
-  padding: 12px;
-  margin: 15px;
+  width: 160px;
+  padding: 6px;
+  margin: 10px;
 `
 export const BoxTitle = styled.h5`
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   letter-spacing: 0.01em;
   color: #3e412e;
-  margin-bottom: 8px;
 
   @media ${props => props.theme.breakpoints.sm}{
-    font-size: 18px;
+    font-size: 16px;
   };
 }
 `
@@ -35,15 +34,11 @@ export const BoxTitle = styled.h5`
 export const BoxText = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
+  margin-bottom: 2px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #3e412e;
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 14px;
-    line-height: 14px;
-  }
 `
 
 export const Join = styled.div`

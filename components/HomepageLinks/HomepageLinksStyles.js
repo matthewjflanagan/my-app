@@ -12,12 +12,17 @@ export const LinkContainer = styled.ul`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  text-align: center
+  text-align: center;
 `
 
 // Links Container
 export const LinkList = styled.li`
-  margin: 5px 0;
+  margin-top: 5px;
+    opacity: 0.8;
+  &:hover {
+    opacity: 1.0;
+    transition: .5s;
+  }
 `
 
 // Navigation Links
@@ -29,8 +34,6 @@ export const NavLink = styled.a`
   margin: 1.2rem;
   border-radius: 10px;
   &:hover {
-    color: white;
     cursor: pointer;
-    transition: .5s;
   }
 `;

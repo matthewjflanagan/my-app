@@ -48,9 +48,9 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2018, text: 'Join logistics company in Charleston, SC', },
-  { year: 2019, text: 'Move to Atlanta, GA for Account Executive role', },
+  { year: 2018, text: 'Documentation role at logistics company in Charleston, SC', },
+  { year: 2019, text: 'Reassigned to Atlanta Branch for Account Executive role', },
   { year: 2020, text: 'Account Executive Rookie of the Year', },
-  { year: 2021, text: 'Started Full-Stack Web Development bootcamp at Georgia Tech', },
-  { year: 2022, text: 'Reached $1 million in project in current company & graduated from Georgia Tech', },
+  { year: 2021, text: '$1.15 million Atlanta Branch profit April 2021 - April 2022', },
+  { year: 2022, text: 'Georgia Tech Full Stack Web Development completed Feb. 16 2022', },
 ];
