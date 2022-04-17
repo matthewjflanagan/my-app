@@ -15,14 +15,13 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 500;
-  margin-left: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: ${(props) => props.main ? '28px' : '32px'};
-  margin-left: 10px;
   width: max-content;
   -webkit-background-clip: text;
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
   line-height: ${(props) => props.main ? '32px' : '40px'};
-  margin-bottom: 8px;
   padding: ${(props) => props.main ? '16px 0 8px' : '0'};
   max-width: 100%;
 `
@@ -31,7 +30,7 @@ export const SectionText = styled.p`
   max-width: 800px;
   margin-top: 10px;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 40px;
   font-weight: 500;
   padding-bottom: 3.6rem;
@@ -40,13 +39,13 @@ export const SectionText = styled.p`
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     padding-bottom: 24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
     line-height: 24px;
     padding-bottom: 16px;
@@ -75,18 +74,18 @@ export const SectionDivider = styled.div`
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   color: #f2f4db;
 
 @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
   }
 `

@@ -41,7 +41,7 @@ const Hero = (props) => (
         </Zoom>
       </div>
       <SectionText>
-      Below you will find a few of my favorite projects, technologies I am interested in, and a brief history of the past 5 years in my professional life. 
+      Below you will find the technologies I have experience in, my professional acheivements, and points of interest about me. 
       </SectionText>
       <Button onClick={() => window.location = '/images/Resume.pdf'}>Resume</Button>
       <Button onClick={() => window.location = '/images/certificate.pdf'}>Georgia Tech Certificate</Button>

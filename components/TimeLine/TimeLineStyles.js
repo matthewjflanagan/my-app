@@ -5,12 +5,11 @@ export const CarouselContainer = styled.ul`
   height: 160px;
   background: #f2f4db;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   list-style:none;
   box-shadow: 3px 3px 20px #f2f4db;
   display: flex;
   justify-content: space-between; 
-  margin-left: 32px;
   &:first-of-type{
     margin: 0 10px;
   }
