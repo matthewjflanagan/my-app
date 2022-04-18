@@ -2,10 +2,10 @@ import React from 'react';
 import { Box, Boxes, BoxTitle, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { title: 'Fayetteville, NC', text: 'Cypress Lakes Golf Course: Golf Cart Attendent'},
-  { title: 'Columbia, SC', text: 'Aberdeen Catery: Server/Bartender'},
-  { title: 'Charleston, SC', text: 'CaroTrans International: Documentation Specialist'},
-  { title: 'Atlanta, GA', text: 'CaroTrans International: Account Executive'}
+  { title: 'Fayetteville, NC', text: '\'11 - \'13: Cypress Lakes Golf Course: Golf Cart Attendent'},
+  { title: 'Columbia, SC', text: '\'15 - \'18: Aberdeen Catery: Server/Bartender'},
+  { title: 'Charleston, SC', text: '\'18 - \'19: CaroTrans International: Documentation Specialist'},
+  { title: 'Atlanta, GA', text: '\'19 - \'22: CaroTrans International: Account Executive'}
 ];
 
 const Acomplishments = () => (

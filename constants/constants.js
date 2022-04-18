@@ -48,9 +48,13 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2018, text: 'Documentation role at logistics company in Charleston, SC', },
-  { year: 2019, text: 'Reassigned to Atlanta Branch for Account Executive role', },
-  { year: 2020, text: 'Account Executive Rookie of the Year', },
-  { year: 2021, text: '$1.15 million Atlanta Branch profit April 2021 - April 2022', },
-  { year: 2022, text: 'Georgia Tech Full Stack Web Development completed Feb. 16 2022', },
+  { year: 'May 2018', text: 'Graduate University of South Carolina with Bachelors of Science in Economics and Minor in Environmental Sciences', },
+  { year: 'July 2018', text: 'Join CaroTrans Internatinal as a Documentation Specialist in Charleston, SC', },
+  { year: 'May 2019', text: '110k Charleston Branch profit for 2018 - 2019 fiscal year', },
+  { year: 'August 2019', text: 'Reassigned to Atlanta Branch for Account Executive role', },
+  { year: 'April 2020', text: 'Account Executive Rookie of the Year', },
+  { year: 'May 2020', text: '180k Atlanta Branch profit for 2019 - 2020 fiscal year', },
+  { year: 'May 2021', text: '225k Atlanta Branch profit for 2020 - 2021 fiscal year', },
+  { year: 'February 2022', text: 'Georgia Tech Full Stack Web Development course completed', },
+  { year: 'May 2022', text: '$1.15 million Atlanta Branch profit for 2021 - 2022 fiscal year', },
 ];
