@@ -39,51 +39,40 @@ export const CarouselMobileScrollNode = styled.div`
 `
 
 export const CarouselItem = styled.div`
-  background: #f2f4db;
-  border-radius: 3px;
-  max-width: 196px;
+margin-left: 32px;
+width: 300px;
+background: #f2f4db;
+padding: 4px;
+align-content: start;
+scroll-snap-align: start;
+border-radius: 3px;
+overflow: visible;
+position: relative;
+height: fit-content;
 
-  @media ${props => props.theme.breakpoints.md} {
-    max-width: 124px;
-  }
+${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
   
   @media ${props => props.theme.breakpoints.sm} {
-    margin-left: 32px;
-    min-width: 120px;
-    background: #f2f4db;
-    padding: 4px;
-    align-content: start;
-    scroll-snap-align: start;
-    border-radius: 3px;
-    overflow: visible;
-    position: relative;
-    height: fit-content;
-    
-    ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
+    width: 180px;
   }
 `
 
-export const CarouselItemTitle = styled.h4`
+export const CarouselItemTitle = styled.h5`
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  display: flex;
+  line-height: 16px;
+  height: fit-content;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
   background: #3e412e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 8px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 4px;
-  }
+  margin: 5px;
+  padding: 5px;
   
   @media ${props => props.theme.breakpoints.sm} {
+    margin: 3px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1px;
   }
 `
 export const CarouselItemImg = styled.svg`
@@ -103,24 +92,15 @@ export const CarouselItemText = styled.p`
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #3e412e;
-  padding-right: 16px;
+  padding: 0 8px;
 
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 12px;
-    line-height: 18px;
-    padding-right: 32px;
-  }
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 10px;
     line-height: 16px;
-    padding-right: 0;
   }
 `
 export const CarouselButtons = styled.div`
   width: 288px;
-
-  display: none;
-  visibility: hidden;
 
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;

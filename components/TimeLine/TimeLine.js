@@ -46,7 +46,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>Professional Career</SectionTitle>
       <SectionText>
-        Recently earned a certificate in full stack development from Georgia Tech University, with newly developed skills in creating responsive web designs.
+        Received a certificate in full stack development from Georgia Tech University, with newly developed skills in creating responsive web designs.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -62,8 +62,8 @@ const Timeline = () => {
                 {item.year}
                 <CarouselItemImg
                     width="208"
-                    height="6"
-                    viewBox="0 0 208 6"
+                    height="3"
+                    viewBox="0 0 208 3"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path

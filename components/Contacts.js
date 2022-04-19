@@ -29,6 +29,14 @@ export const ContactUs = () => {
       <textarea className='inputs' id='messageField' name="message" />
       <input id='submitBtn' type="submit" value="Send" />
     </form>
+    <div style={{ height: "400px" }}>
+      <iframe
+        src="https://calendly.com/matthewflanagan/consultation"
+        width="100%"
+        height="100%"
+        frameborder="0"
+      ></iframe>
+    </div>
     </Section>
   );
 };
