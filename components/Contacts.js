@@ -34,7 +34,7 @@ export const ContactUs = () => {
         src="https://calendly.com/matthewflanagan/consultation"
         width="100%"
         height="100%"
-        frameborder="0"
+        frameBorder="2"
       ></iframe>
     </div>
     </Section>
