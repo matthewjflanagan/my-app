@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Section, SectionTitle, SectionSubText } from '../styles/GlobalComponents'
+import { InlineWidget } from "react-calendly";
 
 export const ContactUs = () => {
   const form = useRef();
@@ -29,14 +30,13 @@ export const ContactUs = () => {
       <textarea className='inputs' id='messageField' name="message" />
       <input id='submitBtn' type="submit" value="Send" />
     </form>
-    <div style={{ height: "400px" }}>
-      <iframe
-        src="https://calendly.com/matthewflanagan/consultation"
-        width="100%"
-        height="100%"
-        frameBorder="2"
-      ></iframe>
-    </div>
+    <InlineWidget 
+      url="https://calendly.com/matthewflanagan/consultation" 
+      styles={{
+        height: '1000px',
+        width: '550px',
+      }}
+    />
     </Section>
   );
 };

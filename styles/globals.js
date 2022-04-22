@@ -378,6 +378,10 @@ form {
   display: none;
   visibility: hidden;
 }
+
+.calendar {
+  width: 800px;
+}
 }
 `;
 

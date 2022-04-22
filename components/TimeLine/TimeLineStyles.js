@@ -72,7 +72,7 @@ export const CarouselItemTitle = styled.h5`
   @media ${props => props.theme.breakpoints.sm} {
     margin: 3px;
     font-size: 16px;
-    line-height: 1px;
+    line-height: 2px;
   }
 `
 export const CarouselItemImg = styled.svg`
