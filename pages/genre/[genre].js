@@ -11,7 +11,7 @@ export default function Genre({genre, tracks}){
         <SectionTitle>Genre: {genre}</SectionTitle>
         <SectionText>Recommended Artists</SectionText>
         <ul>
-        {tracks.map(track => <Track track={track} />)}
+        {tracks.map(track => <Track key={track.id} track={track} />)}
         </ul>
     </Section>
   </Layout>
