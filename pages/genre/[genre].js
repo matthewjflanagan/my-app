@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout } from '../../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Track from '../../components/Track/track';
-import Image from 'next/image';
 
 export default function Genre({genre, tracks}){
   return (
