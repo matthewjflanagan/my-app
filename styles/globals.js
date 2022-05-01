@@ -81,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
 
   /* Color/shape of close button cross */
   .bm-cross {
-        background: ${props => props.theme.colors.background2};
+        background: ${props => props.theme.colors.background1};
   }
 
   /*
@@ -423,6 +423,27 @@ form {
     cursor: pointer;
   }
 }
+
+.genreContainer {
+  width: 200px;
+  height: 60vh;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+.spotifyGenres {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.spotifyGenres a {
+  text-transform: capitalize;
+  color: #f2f4db;
+  &:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 }
 `;
 

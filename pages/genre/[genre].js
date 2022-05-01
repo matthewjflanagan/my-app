@@ -1,18 +1,28 @@
 import React from 'react';
+import Link from 'next/link';
 import { Layout } from '../../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Track from '../../components/Track/track';
 
 export default function Genre({genre, tracks}){
   return (
   <Layout>
     <Section className='spotifyContainer'>
-        <SectionTitle>Genre: {genre}</SectionTitle>
-        <SectionText>Recommended Artists</SectionText>
-        <ul>
-        {tracks.map(track => <Track key={track.id} track={track} />)}
+        <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
+        <SectionText>Recommended Tracks</SectionText>
+        <ul className='genreContainer'>
+        {tracks.map(track => <li className='spotifyGenres' key={track.id}>{track.name}</li>)}
         </ul>
     </Section>
+        <div className='backToHome'>
+            <Link href="/spotify" passHref>
+              <a>← Back to Spotify</a>
+            </Link>
+        </div>
+        <div className='backToHome'>
+            <Link href="/" passHref>
+              <a>← Back to Home</a>
+            </Link>
+        </div>
   </Layout>
   );
 }
