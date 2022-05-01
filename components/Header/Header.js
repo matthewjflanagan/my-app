@@ -16,6 +16,7 @@ const Vito = React.forwardRef(({ onClick, href }, ref) => {
 })
 
 export default function Header () {
+  render (
   <Container>
     <Div1>
       <Menu 
@@ -37,4 +38,4 @@ export default function Header () {
       </Link>
     </Div2>
   </Container>
-};
+)};
