@@ -15,7 +15,7 @@ const Vito = React.forwardRef(({ onClick, href }, ref) => {
   )
 })
 
-const Header = () =>  (
+export default function Header () {
   <Container>
     <Div1>
       <Menu 
@@ -37,8 +37,4 @@ const Header = () =>  (
       </Link>
     </Div2>
   </Container>
-);
-
-Header.displayName = 'Header';
-
-export default Header;
+};
