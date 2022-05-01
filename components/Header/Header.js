@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image'
 import { slide as Menu } from 'react-burger-menu'
 import { Container, Div1,  Div2 } from './HeaderStyles';
+import hamburger from '../../public/images/hamburger.png'
+import cross from '../../public/images/cross.png'
 
 const Vito = React.forwardRef(({ onClick, href }, ref) => {
   return (
@@ -16,7 +18,10 @@ const Vito = React.forwardRef(({ onClick, href }, ref) => {
 const Header = () =>  (
   <Container>
     <Div1>
-      <Menu right>
+      <Menu 
+        customBurgerIcon={ <Image src={hamburger} alt='hamburger' width={50} height={50}/> }
+        customCrossIcon={ <Image src={cross} alt='cross' width={50} height={50}/> }
+      right>
         <Link className="menu-item" href='/' passHref><a className='NavLink'>Home</a></Link>
         <Link className="menu-item" href='/project' passHref><a className='NavLink'>Projects</a></Link>
         <Link className="menu-item" href='/blog' passHref><a className='NavLink'>Blogs</a></Link>
@@ -33,5 +38,7 @@ const Header = () =>  (
     </Div2>
   </Container>
 );
+
+Header.displayName = 'Header';
 
 export default Header;
