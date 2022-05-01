@@ -35,9 +35,7 @@ export async function getStaticPaths() {
         }
     }).then(response => response.json());
 
-    const genrePaths = data.genres.map(genre => {
-        return ({ params: { genre } });
-    });
+    const genrePaths = data.genres.map( genre => { return {params: { genre }} });
 
     return {
         paths: genrePaths,
