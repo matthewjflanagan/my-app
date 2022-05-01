@@ -35,7 +35,9 @@ export async function getStaticPaths() {
         }
     }).then(response => response.json());
 
-    const genrePaths = data.genres.map(genre => {return {params:{ genre }}});
+    const genrePaths = data.genres.map(genre => {
+        return ({ params: { genre } });
+    });
 
     return {
         paths: genrePaths,
@@ -45,16 +47,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
 
-    console.log(params)
-
     const data = await fetch(`https://api.spotify.com/v1/recommendations?seed_genres=${params.genre}`,
     {
         headers:{
             Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
         }
     }).then(response => response.json());
-
-    console.log(data);
 
     return {
         props: {
