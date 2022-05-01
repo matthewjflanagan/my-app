@@ -12,7 +12,7 @@ export default function Genre({genre, tracks}){
         <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
         <SectionText>Recommended Albums</SectionText>
         <ul className='genreContainer'>
-        {tracks.map(track => <Track track={track} />)}
+        {tracks.map(track => <Track key={track} track={track} />)}
         </ul>
     </Section>
         <div className='backToHome'>
