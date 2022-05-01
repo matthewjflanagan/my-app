@@ -42,7 +42,7 @@ export async function getStaticPaths() {
         fallback: false
     };
 }
-
+ 
 export async function getStaticProps({params}) {
 
     const data = await fetch(`https://api.spotify.com/v1/recommendations?seed_genres=${params.genre}`,
