@@ -10,7 +10,7 @@ export default function Genre({genre, tracks}){
         <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
         <SectionText>Recommended Tracks</SectionText>
         <ul className='genreContainer'>
-        {tracks.map(track => <li className='spotifyGenres' key={track.id}>{track.name}</li>)}
+        {tracks.map(track => <li key={track.id} className='spotifyGenres'>{track.name}</li>)}
         </ul>
     </Section>
         <div className='backToHome'>
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
         }
     }).then(response => response.json());
 
-    const genrePaths = data.genres.map(genre => { return {params:{ genre }}});
+    const genrePaths = data.genres.map(genre => {return {params:{ genre }}});
 
     return {
         paths: genrePaths,
