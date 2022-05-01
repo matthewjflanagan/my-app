@@ -11,7 +11,7 @@ export default function Spotify({ genres }){
         <ul>
             {genres.map(genre => 
                 <li key={genre}>
-                    <Link href={`/genre/${genre}`}>
+                    <Link href={`/genre/${genre}`} passHref>
                         <a>
                             {genre}
                         </a>
