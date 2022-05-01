@@ -27,6 +27,23 @@ export default function Genre({genre, tracks}){
   );
 }
 
+export async function getStaticProps({params}) {
+
+    const data = await fetch(`https://api.spotify.com/v1/recommendations?seed_genres=${params.genre}`,
+    {
+        headers:{
+            Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
+        }
+    }).then(response => response.json());
+
+    return {
+        props: {
+            genre: params.genre,
+            tracks: data.tracks
+        }
+    }
+}
+
 export async function getStaticPaths() {
     const data = await fetch("https://api.spotify.com/v1/recommendations/available-genre-seeds",
     {
@@ -43,21 +60,4 @@ export async function getStaticPaths() {
         paths: genrePaths,
         fallback: false
     };
-}
-
-export async function getStaticProps({params}) {
-
-    const data = await fetch(`https://api.spotify.com/v1/recommendations?seed_genres=${params.genre}`,
-    {
-        headers:{
-            Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
-        }
-    }).then(response => response.json());
-
-    return {
-        props: {
-            genre: params.genre,
-            tracks: data.tracks
-        }
-    }
 }
