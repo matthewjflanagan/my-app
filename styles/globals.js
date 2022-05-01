@@ -374,7 +374,6 @@ form {
   max-height: 250px;
   border-radius: 5px;
   border: 3px solid #f2f4db;
-  box-shadow: 0 0 5px #f2f4db;
 }
 
 .slide-container img {
