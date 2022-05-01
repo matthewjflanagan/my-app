@@ -7,7 +7,7 @@ import { Container, Div1,  Div2 } from './HeaderStyles';
 import hamburger from '../../public/images/hamburger.png'
 import cross from '../../public/images/cross.png'
 
-export const Vito = React.forwardRef(({ onClick, href }, ref) => {
+var Vito = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
       <Image className='vitoIcon'  src={vito} alt='vitoIcon' width={50} height={82} />
