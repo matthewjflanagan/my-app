@@ -2,15 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import Track from '../../components/Track/track';
+import Image from 'next/image';
 
 export default function Genre({genre, tracks}){
   return (
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
-        <SectionText>Recommended Tracks</SectionText>
+        <SectionText>Recommended Albums</SectionText>
         <ul className='genreContainer'>
-        {tracks.map(track => <li key={track.id} className='spotifyGenres'>{track.name}</li>)}
+        {tracks.map(track => <Track track={track} />)}
         </ul>
     </Section>
         <div className='backToHome'>

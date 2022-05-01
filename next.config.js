@@ -1,7 +1,8 @@
 module.exports = {
 	images: {
 		domains: [
-			'cdn.sanity.io'
+			'cdn.sanity.io',
+			'i.scdn.co'
 		]
 	}
 };
