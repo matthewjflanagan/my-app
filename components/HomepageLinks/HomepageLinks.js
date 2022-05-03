@@ -62,10 +62,10 @@ const HomepageLinks = () => (
   <>
   <Div1>
     <LinkContainer>
-      <Link href='/project'>
+      <Link href='/project' passHref>
       <NavLink><Webpage /></NavLink>
       </Link>
-      <Link href='/blog'>
+      <Link href='/blog' passHref>
       <NavLink><Blog /></NavLink>
       </Link>
       <Link href='/videos' passHref>
