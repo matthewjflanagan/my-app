@@ -29,6 +29,11 @@ export default function Genre({genre, tracks}){
  
 export async function getServerSideProps({params}) {
 
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+      )
+
     const data = await fetch(`https://api.spotify.com/v1/recommendations?seed_genres=${params.genre}`,
     {
         headers:{
