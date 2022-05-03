@@ -95,7 +95,7 @@ const GlobalStyles = createGlobalStyle`
 
   /* General sidebar styles */
   .bm-menu {
-    background: #3e412e;
+    background: ${props => props.theme.colors.background1};
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
@@ -187,11 +187,11 @@ const GlobalStyles = createGlobalStyle`
 
 .blogPost {
   margin-bottom: 20px;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
 }
 
 .blogLink {
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   &:hover {
     color: white;
     cursor: pointer;
@@ -229,7 +229,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 .backToHome a {
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   &:hover {
     color: white;
     cursor: pointer;
@@ -266,7 +266,7 @@ const GlobalStyles = createGlobalStyle`
 
 .vitoLink {
   text-decoration: none;
-  color: #3e412e;
+  color: ${props => props.theme.colors.primary2};
   font-size: 22px;
   text-align: center;
 }
@@ -313,7 +313,7 @@ const GlobalStyles = createGlobalStyle`
 /* Contact */
 
 .contactForm {
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   font-size: 20px;
   margin: 2% 0;
   text-align: center;
@@ -334,8 +334,8 @@ form {
   max-width: 1040px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: #f2f4db;
-  color: #3e412e;
+  background-color: ${props => props.theme.colors.primary1};
+  color: ${props => props.theme.colors.primary2};
   border-radius: 5px;
   box-shadow: 0 0 5px #f2f4db;
   border-style: none;
@@ -343,8 +343,8 @@ form {
 
 #messageField {
   height: 30vh;
-  background-color: #f2f4db;
-  color: #3e412e;
+  background-color: ${props => props.theme.colors.primary1};
+  color: ${props => props.theme.colors.primary2};
   border-radius: 5px;
   box-shadow: 0 0 5px #f2f4db;
   border-style: none;
@@ -352,8 +352,8 @@ form {
 
 #submitBtn {
   margin-top: 10px;
-  background-color: #f2f4db;
-  color: #3e412e;
+  background-color: ${props => props.theme.colors.primary1};
+  color: ${props => props.theme.colors.primary2};
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -395,12 +395,12 @@ form {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 32px;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   margin: 0 .5rem;
   padding: 1rem;
   border-radius: 10px;
   &:hover {
-    background-color: #3e412e;
+    background: ${props => props.theme.colors.background1};
     transform: scale(1.1);
     cursor: pointer;
     transition: .5s;
@@ -413,11 +413,11 @@ form {
   align-items: center;
   transition: 0.3s ease;
   width: 5rem;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   border-radius: 10px;
   padding: 2px;
 &:hover {
-    background-color: #3e412e;
+    background: ${props => props.theme.colors.background1};
     transform: scale(1.1);
     cursor: pointer;
   }
@@ -437,7 +437,7 @@ form {
 
 .spotifyGenres a {
   text-transform: capitalize;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   &:hover {
     color: white;
     cursor: pointer;
