@@ -26,22 +26,6 @@ export default function Genre({genre, tracks}){
   </Layout>
   );
 }
-
-export async function getStaticPaths() {
-    const data = await fetch("https://api.spotify.com/v1/recommendations/available-genre-seeds",
-    {
-        headers:{
-            Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
-        }
-    }).then(response => response.json());
-
-    const genrePaths = data.genres.map( genre => { return {params: { genre }} });
-
-    return {
-        paths: genrePaths,
-        fallback: false
-    };
-}
  
 export async function getServerSideProps({params}) {
 
