@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ImageContainer = styled.div`
   text-align: center;
-  background-color: ${props => props.theme.colors.primary1};
+  background-color: #f2f4db;
   width: 100%;
   padding: 60px;
   margin-top: 48px;
@@ -12,12 +12,12 @@ export const ImageContainer = styled.div`
   justify-content: center;
 
   @media ${props => props.theme.breakpoints.lg} {
-    background-color: ${props => props.theme.colors.primary1};
+    background-color: #f2f4db;
     padding: 0;
     margin-top: 40px;
   }
   @media ${props => props.theme.breakpoints.md} {
-    background-color: ${props => props.theme.colors.primary1};
+    background-color: #f2f4db;
     padding: 0;
     margin-top: 16px;
   }
@@ -65,7 +65,7 @@ export const ListTitle = styled.h4`
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
-  color: ${props => props.theme.colors.primary1};
+  color: #f2f4db;
   margin-bottom: 8px;
 
 @media ${props => props.theme.breakpoints.md}{
@@ -84,7 +84,7 @@ export const ListTitle = styled.h4`
 export const ListParagraph = styled.p`
   font-size: 18px;
   line-height: 30px;
-  color: ${props => props.theme.colors.primary1};
+  color: #f2f4db;
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: 16px;

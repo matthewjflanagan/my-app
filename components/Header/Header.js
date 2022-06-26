@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import home from '../../public/images/homeIcon.png'
+import vito from '../../public/images/vitoIcon.png'
 import React from 'react';
 import Image from 'next/image'
 import { slide as Menu } from 'react-burger-menu'
@@ -7,10 +7,10 @@ import { Container, Div1,  Div2 } from './HeaderStyles';
 import hamburger from '../../public/images/hamburger.png'
 import cross from '../../public/images/cross.png'
 
-var Home = React.forwardRef(({ onClick, href }, ref) => {
+var Vito = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
-      <Image className='vitoIcon'  src={home} alt='homeIcon' width={48} height={48} />
+      <Image className='vitoIcon'  src={vito} alt='vitoIcon' width={50} height={82} />
     </a>
   )
 })
@@ -33,7 +33,7 @@ const Header = () =>  (
     </Div1>
     <Div2>
       <Link href='/' passHref>
-        <Home />
+        <Vito />
       </Link>
     </Div2>
   </Container>

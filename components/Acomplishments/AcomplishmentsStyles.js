@@ -9,7 +9,8 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-  background: ${props => props.theme.colors.background2};
+  background: #f2f4db;
+  box-shadow: 0 0 5px #f2f4db;
   border-radius: 12px;
   height: 100px;
   width: 160px;
@@ -22,7 +23,7 @@ export const BoxTitle = styled.h5`
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.01em;
-  color: ${props => props.theme.colors.primary2};
+  color: #3e412e;
 }
 `
 
@@ -33,7 +34,7 @@ export const BoxText = styled.p`
   margin-bottom: 2px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: ${props => props.theme.colors.primary2};
+  color: #3e412e;
 `
 
 export const Join = styled.div`
@@ -49,7 +50,7 @@ export const JoinText = styled.h5`
   font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: ${props => props.theme.colors.primary2};
+  color: #3e412e;
 
 @media ${props => props.theme.breakpoints.md}{
   line-height: 32px;

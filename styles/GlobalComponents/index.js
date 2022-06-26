@@ -34,7 +34,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 500;
   padding-bottom: 3.6rem;
-  color: ${props => props.theme.colors.primary1};
+  color: #f2f4db;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -56,7 +56,8 @@ export const SectionDivider = styled.div`
   width: 64px;
   height: 6px;
   border-radius: 10px;
-  background: ${props => props.theme.colors.background2};
+  background-color: #3e412e;
+  background: #3e412e;
 
     margin: ${(props) => props.divider ? "4rem 0" : "" };
 
@@ -75,7 +76,7 @@ export const SectionSubText = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
-  color: ${props => props.theme.colors.primary1};
+  color: #f2f4db;
 
 @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
@@ -89,7 +90,7 @@ export const SectionSubText = styled.p`
   }
 `
 export const SecondaryBtn = styled.button`
-  color: ${props => props.theme.colors.primary2};
+  color: #f2f4db;
   background: none;
   border: #f2f4db;
   box-sizing: border-box;
@@ -108,8 +109,8 @@ export const SecondaryBtn = styled.button`
   }
 
   &:hover {
-    color: ${props => props.theme.colors.primary2};
-    background: ${props => props.theme.colors.background2};
+    color: #f2f4db;
+    background: #3e412e;
     border: 1px solid white;
   }
 
@@ -148,8 +149,8 @@ export const ButtonBack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${props => props.theme.colors.primary2};
-  background: ${props => props.theme.colors.background2};
+  color: #3e412e;
+  background: #f2f4db;
   position: relative;
   overflow: hidden;
 
@@ -169,7 +170,7 @@ export const ButtonBack = styled.div`
 
 export const ButtonFront = styled.button`
   border: none;
-  color: ${props => props.theme.colors.primary2};
+  color: #3e412e;
   display: flex;
   position: absolute;
   top: 0;
@@ -196,7 +197,7 @@ export const ButtonFront = styled.button`
   }
 
   &:disabled{
-    background: ${props => props.theme.colors.background2};
+    background: #f2f4db;
     opacity: 0.5;
   }
 `
@@ -209,7 +210,7 @@ export const LinkContainer = styled.div`
   padding: 8px;
 
   &:hover {
-    background-color: ${props => props.theme.colors.background1};
+    background-color: #f2f4db;
     transform: scale(1.2);
     cursor: pointer;
   }

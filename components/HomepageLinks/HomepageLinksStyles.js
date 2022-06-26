@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const Div1 = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-`;
-
 export const Div2 = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,10 +9,8 @@ export const Div2 = styled.div`
 
 // Links Container
 export const LinkContainer = styled.ul`
-  margin: 5px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 `
@@ -36,11 +27,11 @@ export const LinkList = styled.li`
 
 // Navigation Links
 export const NavLink = styled.a`
-  margin: 4px;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 22px;
-  color: ${props => props.theme.colors.primary1};
+  color: #f2f4db;
+  margin: 1.2rem;
   border-radius: 10px;
   &:hover {
     cursor: pointer;
