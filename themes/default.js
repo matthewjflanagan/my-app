@@ -7,10 +7,12 @@ export default {
     main: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
   },
   // Colors for layout
-  colors: {
-    primary1: "#f2f4db",
+  colors: { 
+    primary1: "#f2f4db",   
+    primary2: "#3e412e",
     background1: "#3e412e",
-    button: "#f2f4db",
+    background2: "#f2f4db",
+    button: "#3e412e",
   },
   // Breakpoints for responsive design
   breakpoints: {

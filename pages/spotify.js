@@ -2,16 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../styles/GlobalComponents';
+import axios from 'axios';
 
 export default function Spotify({ genres }){
   return (
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle>Genre List</SectionTitle>
-        <ul>
-            {genres.map( genre => 
-                <li key={genre}>
-                    <Link href={`/genre/${genre}`}>
+        <ul className='genreContainer'>
+            {genres.map(genre => 
+                <li className='spotifyGenres' key={genre}>
+                    <Link href={`/genre/${genre}`} passHref>
                         <a>
                             {genre}
                         </a>
@@ -19,13 +20,18 @@ export default function Spotify({ genres }){
                 </li>)}
         </ul>
     </Section>
+    <div className='backToHome'>
+        <Link href="/" passHref>
+            <a>← Back to Home</a>
+        </Link>
+    </div>
   </Layout>
   );
 }
 
 export async function getStaticProps() {
 
-    const data = await fetch("https://api.spotify.com/v1/recommendations/available-genre-seeds",
+    const data = await axios.get("https://api.spotify.com/v1/recommendations/available-genre-seeds",
     {
         headers:{
             Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
