@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+const axios = require('axios');
 
 export default function Genre({genre, tracks}){
   return (

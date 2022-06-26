@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../styles/GlobalComponents';
+import axios from 'axios';
 
 export default function Spotify({ genres }){
   return (
@@ -30,7 +31,7 @@ export default function Spotify({ genres }){
 
 export async function getStaticProps() {
 
-    const data = await fetch("https://api.spotify.com/v1/recommendations/available-genre-seeds",
+    const data = await axios.get("https://api.spotify.com/v1/recommendations/available-genre-seeds",
     {
         headers:{
             Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
