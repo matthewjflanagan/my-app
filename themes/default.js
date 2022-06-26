@@ -10,8 +10,6 @@ export default {
   colors: {
     primary1: "#f2f4db",
     background1: "#3e412e",
-    primary2: "#3e412e",
-    background2: "#f2f4db",
     button: "#f2f4db",
   },
   // Breakpoints for responsive design

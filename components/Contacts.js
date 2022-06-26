@@ -21,7 +21,7 @@ export const ContactUs = () => {
     <Section>
       <SectionTitle>Contact Page</SectionTitle>
       <SectionSubText>If you have any further questions or would like to speak with me please send me a message with the best way to contact you!</SectionSubText>
-    <form innerRef={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail}>
       <label className='contactForm'>Name</label>
       <input className='inputs' type="text" name="user_name" />
       <label className='contactForm'>Email</label>

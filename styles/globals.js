@@ -10,11 +10,11 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   html {
     font-size: 62.5%;
@@ -27,13 +27,8 @@ const GlobalStyles = createGlobalStyle`
     background: ${props => props.theme.colors.background1};
     color: ${props => props.theme.colors.primary1};
     cursor: default;
-  }
 
-  body.light {
-    background: ${props => props.theme.colors.background2};
-    color: ${props => props.theme.colors.primary2};
   }
-
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
   }
@@ -44,66 +39,62 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
-  #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-  }
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
   
   /* Position and sizing of burger button */
-  .bm-burger-button {
-    margin: 15px 10px;
-    position: relative;
-  }
+.bm-burger-button {
+  margin: 15px 10px;
+  position: relative;
+}
 
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: ${props => props.theme.colors.background1};
-  }
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #3e412e;
+}
 
-  .bm-burger-bars.light {
-    background: ${props => props.theme.colors.background2};
-  }
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #f2f4db;
+  transition: .5s;
+}
 
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: ${props => props.theme.colors.background2};
-    transition: .5s;
-  }
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
 
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
+/* Color/shape of close button cross */
+// .bm-cross {
+//   background: #f2f4db;
+// }
 
-  /* Color/shape of close button cross */
-  .bm-cross {
-        background: ${props => props.theme.colors.background1};
-  }
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
 
-  /*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
+/* General sidebar styles */
+.bm-menu {
+  background: #3e412e;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
 
-  /* General sidebar styles */
-  .bm-menu {
-    background: #3e412e;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #3e412e;
-  }
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #3e412e;
+}
 
 /* Wrapper for item list */
 .bm-item-list {
@@ -374,6 +365,7 @@ form {
   max-height: 250px;
   border-radius: 5px;
   border: 3px solid #f2f4db;
+  box-shadow: 0 0 5px #f2f4db;
 }
 
 .slide-container img {
@@ -390,59 +382,6 @@ form {
 .calendar {
   width: 800px;
 }
-
-.NavLink {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 32px;
-  color: #f2f4db;
-  margin: 0 .5rem;
-  padding: 1rem;
-  border-radius: 10px;
-  &:hover {
-    background-color: #3e412e;
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: .5s;
-  }
-}
-
-.SocialIcons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s ease;
-  width: 5rem;
-  color: #f2f4db;
-  border-radius: 10px;
-  padding: 2px;
-&:hover {
-    background-color: #3e412e;
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-}
-
-.genreContainer {
-  width: 200px;
-  height: 60vh;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-
-.spotifyGenres {
-  padding: 10px;
-  text-transform: capitalize;
-}
-
-.spotifyGenres a {
-  text-transform: capitalize;
-  color: #f2f4db;
-  &:hover {
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
-  }
 }
 `;
 

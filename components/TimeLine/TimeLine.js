@@ -48,7 +48,7 @@ const Timeline = () => {
       <SectionText>
         Received a certificate in full stack development from Georgia Tech University, with newly developed skills in creating responsive web designs.
       </SectionText>
-      <CarouselContainer innerRef={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
         {TimeLineData.map((item, index) => (
           <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>

@@ -19,12 +19,12 @@ export default function Post({ postData }) {
         </SectionText>
         <div className='blogContent' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <div className='backToHome'>
-            <Link href="/blog" passHref>
+            <Link href="/blog">
               <a>← Back to Blogs</a>
             </Link>
         </div>
         <div className='backToHome'>
-            <Link href="/" passHref>
+            <Link href="/">
               <a>← Back to Home</a>
             </Link>
         </div>

@@ -24,7 +24,7 @@ export default function Vito() {
     <div className="slide-container">
       <Zoom {...zoomOutProperties}>
         {images.map((each, index) => (
-          <Image key={index} src={each} alt='vitoslides'/>
+          <Image key={index} src={each} />
         ))}
       </Zoom>
     </div>

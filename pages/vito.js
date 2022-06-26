@@ -28,7 +28,7 @@ export default function Contact( { chapters }){
         {chapters?.length > 0 && chapters.map((chapters) => (
           <li className='chapters-list' key={chapters._id}>
             <SectionText>{chapters.name}</SectionText>
-            <Link href={`/chapters/${chapters.slug.current}`} passHref>
+            <Link href={`/chapters/${chapters.slug.current}`}>
             <a className='vitoLink'>
               <Image className='vitoImg' alt='chapter cover' src={urlFor(chapters.cover).url()} width='400' height='400'/>
             </a>
@@ -37,7 +37,7 @@ export default function Contact( { chapters }){
         ))}
       </ul>
         <div className='backToHome'>
-            <Link href="/" passHref>
+            <Link href="/">
               <a>← Back to Home</a>
             </Link>
         </div>

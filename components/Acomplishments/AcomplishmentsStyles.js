@@ -10,6 +10,7 @@ export const Boxes = styled.div`
 
 export const Box = styled.div`
   background: #f2f4db;
+  box-shadow: 0 0 5px #f2f4db;
   border-radius: 12px;
   height: 100px;
   width: 160px;

@@ -36,8 +36,7 @@ const Hero = (props) => (
             width='250'
             height='250'
             className='vitoImg'
-            src={each}
-            alt='vitoSlide' />
+            src={each} />
           ))}
         </Zoom>
       </div>

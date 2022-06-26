@@ -8,10 +8,10 @@ export default function Spotify({ genres }){
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle>Genre List</SectionTitle>
-        <ul className='genreContainer'>
-            {genres.map(genre => 
-                <li className='spotifyGenres' key={genre}>
-                    <Link href={`/genre/${genre}`} passHref>
+        <ul>
+            {genres.map( genre => 
+                <li key={genre}>
+                    <Link href={`/genre/${genre}`}>
                         <a>
                             {genre}
                         </a>
@@ -19,11 +19,6 @@ export default function Spotify({ genres }){
                 </li>)}
         </ul>
     </Section>
-    <div className='backToHome'>
-        <Link href="/" passHref>
-            <a>← Back to Home</a>
-        </Link>
-    </div>
   </Layout>
   );
 }

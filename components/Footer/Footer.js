@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
-import Link from 'next/link';
+
+import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
 const Footer = () => {
@@ -13,11 +14,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
-        <LinkItem href="mailto:mattlflanagan67@gmail.com">mattflanagan67@gmail.com</LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-        <LinkTitle>Message</LinkTitle>
-        <LinkItem href='/contact' passHref>Contact Page</LinkItem>
+        <LinkItem href="mailto:mattlflanagan67@gmail.com">mattlflanagan67@gmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
@@ -25,15 +22,15 @@ const Footer = () => {
           <Slogan>Leave it better than you found it.</Slogan>
         </CompanyContainer>
           <SocialContainer>
-            <Link href="https://github.com/matthewjflanagan" passHref>
-              <a className='SocialIcons'><AiFillGithub size="3rem" /></a>
-            </Link>
-            <Link href="https://www.linkedin.com/in/matthew-flanagan-13253a223/" passHref>
-              <a className='SocialIcons'><AiFillLinkedin size="3rem" /></a>
-            </Link>
-            <Link href="https://youtube.com" passHref>
-              <a className='SocialIcons'><AiFillYoutube size="3rem" /></a>
-            </Link>
+            <SocialIcons href="https://github.com/matthewjflanagan">
+              <AiFillGithub size="3rem" />
+            </SocialIcons>
+            <SocialIcons href="https://www.linkedin.com/in/matthew-flanagan-13253a223/">
+              <AiFillLinkedin size="3rem" />
+            </SocialIcons>
+            <SocialIcons href="https://youtube.com">
+              <AiFillYoutube size="3rem" />
+            </SocialIcons>
           </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
