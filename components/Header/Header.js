@@ -27,7 +27,6 @@ const Header = () =>  (
         <Link className="menu-item" href='/blog' passHref><a className='NavLink'>Blogs</a></Link>
         <Link className="menu-item" href='/videos' passHref><a className='NavLink'>Videos</a></Link>
         <Link className="menu-item" href='/vito' passHref><a className='NavLink'>The Dogfather</a></Link>
-        <Link className="menu-item" href='/spotify' passHref><a className='NavLink'>Spotify</a></Link>
         <Link className="menu-item" href='/contact' passHref><a className='NavLink'>Contact</a></Link>
       </Menu>
     </Div1>

@@ -6,7 +6,6 @@ import vito from '../../public/images/vitoIcon.png'
 import webpage from '../../public/images/webpageIcon.png'
 import blog from '../../public/images/blogIcon.png'
 import video from '../../public/images/videoIcon.png'
-import spotify from '../../public/images/spotifyIcon.png'
 import contact from '../../public/images/contactIcon.png'
 
 
@@ -42,14 +41,6 @@ var Video = React.forwardRef(({ onClick, href }, ref) => {
   )
 })
 
-var Spotify = React.forwardRef(({ onClick, href }, ref) => {
-  return (
-    <a href={href} onClick={onClick} ref={ref}>
-      <Image className='vitoIcon'  src={spotify} alt='musicIcon' width={48} height={48} />
-    </a>
-  )
-})
-
 var Contact = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
@@ -73,9 +64,6 @@ const HomepageLinks = () => (
       </Link>
       <Link href='/vito' passHref>
       <NavLink><Vito /></NavLink>
-      </Link>
-      <Link href='/spotify' passHref>
-      <NavLink><Spotify /></NavLink>
       </Link>
       <Link href='/contact' passHref>
       <NavLink><Contact /></NavLink>

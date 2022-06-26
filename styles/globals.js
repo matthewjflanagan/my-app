@@ -428,22 +428,6 @@ form {
   height: 60vh;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-
-
-.spotifyGenres {
-  padding: 10px;
-  text-transform: capitalize;
-}
-
-.spotifyGenres a {
-  text-transform: capitalize;
-  color: ${props => props.theme.colors.primary1};
-  &:hover {
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-}
 `;
 
 export default GlobalStyles;
