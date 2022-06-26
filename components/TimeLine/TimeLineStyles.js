@@ -3,11 +3,10 @@ import styled from 'styled-components'
 export const CarouselContainer = styled.ul`
   width: 500px;
   height: 160px;
-  background: #f2f4db;
+  background: ${props => props.theme.colors.background2};
   border-radius: 10px;
   padding: .5rem 1rem;
   list-style:none;
-  box-shadow: 3px 3px 20px #f2f4db;
   display: flex;
   justify-content: space-between; 
   &:first-of-type{
@@ -32,16 +31,14 @@ export const CarouselContainer = styled.ul`
   }
 `
 export const CarouselMobileScrollNode = styled.div`
-  @media ${props => props.theme.breakpoints.sm} {
-    display: flex;
-    min-width: ${({ final }) => final ? `120%;` : `min-content`}
-  }
+  display: flex;
+  min-width: ${({ final }) => final ? `120%;` : `min-content`}
 `
 
 export const CarouselItem = styled.div`
 margin-left: 32px;
 width: 300px;
-background: #f2f4db;
+background: ${props => props.theme.colors.background2};
 padding: 4px;
 align-content: start;
 scroll-snap-align: start;
@@ -63,7 +60,7 @@ export const CarouselItemTitle = styled.h5`
   line-height: 16px;
   height: fit-content;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: #3e412e;
+  background: ${props => props.theme.colors.background1};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 5px;
@@ -76,22 +73,17 @@ export const CarouselItemTitle = styled.h5`
   }
 `
 export const CarouselItemImg = styled.svg`
-  margin-left: 21px;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: none;
+  margin-left: 16px;
+  overflow: visible;
   width: 100%;
-
-  @media ${props => props.theme.breakpoints.sm} {
-    -webkit-mask-image: none;
-    margin-left: 16px;
-    overflow: visible;
-  }
 `
 
 export const CarouselItemText = styled.p`
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #3e412e;
+  color: ${props => props.theme.colors.primary2};
   padding: 0 8px;
 
   @media ${props => props.theme.breakpoints.sm} {
@@ -100,13 +92,9 @@ export const CarouselItemText = styled.p`
   }
 `
 export const CarouselButtons = styled.div`
-  width: 288px;
-
-  @media ${props => props.theme.breakpoints.sm} {
-    display: flex;
-    visibility: visible;
-    margin-bottom: 48px;
-  }
+  display: flex;
+  visibility: visible;
+  margin-bottom: 48px;
 `
 
 export const CarouselButton = styled.button`
@@ -118,14 +106,13 @@ export const CarouselButton = styled.button`
   cursor: pointer;
   opacity: ${(props) => props.active === props.index ? `1` : `.33`};
   transform: ${(props) => props.active === props.index ? `scale(1.6)` : `scale(1)`};
-
   &:focus {
     outline: none;
   }
 `
 
 export const CarouselButtonDot = styled.div`
-  background-color: #f2f4db;
+  background-color: ${props => props.theme.colors.primary1};
   border-radius: 10px;
   margin: auto;
   width: 3px;

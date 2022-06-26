@@ -17,7 +17,7 @@ export default function Blog({ allPostsData }) {
     <TagList className='blogContainer'>
       {allPostsData.map(({ id, date, title }) => (
         <li className='blogPost' key={id}>
-          <Link href={`/posts/${id}`}>
+          <Link href={`/posts/${id}`} passHref>
             <a className='blogLink'>{title}</a>
           </Link>
           <br />
@@ -28,7 +28,7 @@ export default function Blog({ allPostsData }) {
       ))}
     </TagList>
     <div className='backToHome'>
-      <Link href="/">
+      <Link href="/" passHref>
         <a>← Back to Home</a>
       </Link>
     </div>

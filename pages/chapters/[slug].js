@@ -46,12 +46,12 @@ if(router.isFallback) {
                  <PortableText value={chapters?.description}/>
          </div>
          <div className='backToHome'>
-            <Link href="/vito">
+            <Link href="/vito" passHref>
               <a>← Back to The Life of Vito</a>
             </Link>
         </div>
         <div className='backToHome'>
-            <Link href="/">
+            <Link href="/" passHref>
               <a>← Back to Home</a>
             </Link>
         </div>

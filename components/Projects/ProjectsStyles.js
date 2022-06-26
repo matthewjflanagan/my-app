@@ -49,7 +49,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   padding: .5rem 0;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
@@ -59,13 +59,13 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #f2f4db;
+  background: ${props => props.theme.colors.background2};
 `;
 
 export const Intro = styled.div`
   width: 170px;
   margin: 0 auto;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   font-family: 'Droid Serif', serif;
   font-size: 13px;
   font-style: italic;
@@ -76,7 +76,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: #f2f4db;
+  color: ${props => props.theme.colors.primary1};
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -101,7 +101,7 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
-color: #f2f4db;
+color: ${props => props.theme.colors.primary1};
 font-size: 1.5rem;
 `
 
@@ -111,12 +111,12 @@ justify-content: center;
 align-items: center;
 transition: 0.3s ease;
 width: 100px;
-color: #3e412e;
+color: ${props => props.theme.colors.primary2};
 border-radius: 10px;
 padding: 2px;
-background-color: #f2f4db;
+background-color: ${props => props.theme.colors.primary1};
 &:hover {
-    background-color: #f2f4db;
+    background-color: ${props => props.theme.colors.primary1};
     transform: scale(1.1);
     transition: .5s;
     cursor: pointer;
