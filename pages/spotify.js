@@ -9,7 +9,7 @@ export default function Spotify({ genres }){
     <Section className='spotifyContainer'>
         <SectionTitle>Genre List</SectionTitle>
         <ul>
-            {genres.map( genre => 
+            {genres.map(genre => 
                 <li key={genre}>
                     <Link href={`/genre/${genre}`}>
                         <a>
