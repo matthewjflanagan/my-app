@@ -2,16 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-const axios = require('axios');
 
 export default function Genre({genre, tracks}){
   return (
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
-        <SectionText>Recommended Albums</SectionText>
+        <SectionText>Recommended Tracks</SectionText>
         <ul className='genreContainer'>
-        {tracks.map(track => <li key={track.id}>{track.name}</li>)}
+        {tracks.map(track => <li key={track.id} className='spotifyGenres'>{track.name}</li>)}
         </ul>
     </Section>
         <div className='backToHome'>
