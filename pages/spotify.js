@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import { Layout } from '../layout/Layout';
 import { Section, SectionText, SectionTitle } from '../styles/GlobalComponents';
-import axios from 'axios';
 
 export default function Spotify({ genres }){
   return (
