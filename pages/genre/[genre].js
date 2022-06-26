@@ -8,7 +8,7 @@ export default function Genre({genre, tracks}){
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle className='spotifyGenres'>{genre}</SectionTitle>
-        <SectionText>Recommended Tracks</SectionText>
+        <SectionText>Recommended Tracks:</SectionText>
         <ul className='genreContainer'>
         {tracks.map(track => <li key={track.id} className='spotifyGenres'>{track.name}</li>)}
         </ul>
