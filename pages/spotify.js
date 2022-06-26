@@ -8,10 +8,10 @@ export default function Spotify({ genres }){
   <Layout>
     <Section className='spotifyContainer'>
         <SectionTitle>Genre List</SectionTitle>
-        <ul className='genreContainer'>
-            {genres.map(genre => 
-                <li className='spotifyGenres' key={genre}>
-                    <Link href={`/genre/${genre}`} passHref>
+        <ul>
+            {genres.map( genre => 
+                <li key={genre}>
+                    <Link href={`/genre/${genre}`}>
                         <a>
                             {genre}
                         </a>
@@ -19,18 +19,13 @@ export default function Spotify({ genres }){
                 </li>)}
         </ul>
     </Section>
-    <div className='backToHome'>
-        <Link href="/" passHref>
-            <a>← Back to Home</a>
-        </Link>
-    </div>
   </Layout>
   );
 }
 
 export async function getStaticProps() {
 
-    const data = await axios.get("https://api.spotify.com/v1/recommendations/available-genre-seeds",
+    const data = await fetch("https://api.spotify.com/v1/recommendations/available-genre-seeds",
     {
         headers:{
             Authorization: `Bearer ${process.env.SPOTIFY_OAUTH_TOKEN}`
