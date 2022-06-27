@@ -38,12 +38,13 @@ export const LinkList = styled.li`
 export const NavLink = styled.a`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   margin: 4px 2px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 22px;
   color: ${props => props.theme.colors.primary1};
-  border-radius: 10px;
   &:hover {
     cursor: pointer;
   }
