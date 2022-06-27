@@ -14,11 +14,15 @@ export const Div2 = styled.div`
   justify-content: space-between;
 `;
 
+export const Div3 = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 // Links Container
 export const LinkContainer = styled.ul`
   margin: 5px;
   display: flex;
-  justify-content: space-around;
   align-items: flex-end;
   flex-wrap: wrap;
   text-align: center;
@@ -40,7 +44,7 @@ export const NavLink = styled.a`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin: 4px 2px;
+  margin: 5px;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 22px;

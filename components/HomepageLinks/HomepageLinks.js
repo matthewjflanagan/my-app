@@ -1,5 +1,5 @@
 import React from 'react';
-import { Div1, Div2, LinkContainer, NavLink, LinkList } from './HomepageLinksStyles';
+import { Div1, Div2, Div3, LinkContainer, NavLink, LinkList } from './HomepageLinksStyles';
 import Link from 'next/link';
 import Image from 'next/image'
 import vito from '../../public/images/vitoIcon.png'
@@ -53,21 +53,21 @@ const HomepageLinks = () => (
   <>
   <Div1>
     <LinkContainer>
-      <Link href='/project' passHref>
-      <NavLink><Webpage />Projects</NavLink>
-      </Link>
-      <Link href='/blog' passHref>
-      <NavLink><Blog />Blogs</NavLink>
-      </Link>
-      <Link href='/videos' passHref>
-      <NavLink><Video />Videos</NavLink>
-      </Link>
-      <Link href='/vito' passHref>
-      <NavLink><Vito />Vito</NavLink>
-      </Link>
-      <Link href='/contact' passHref>
-      <NavLink><Contact />Contact Me</NavLink>
-      </Link>
+      <LinkList><Link href='/project' passHref>
+      <NavLink><Webpage /><Div3>Projects</Div3></NavLink>
+      </Link></LinkList>
+      <LinkList><Link href='/blog' passHref>
+      <NavLink><Blog /><Div3>Blogs</Div3></NavLink>
+      </Link></LinkList>
+      <LinkList><Link href='/videos' passHref>
+      <NavLink><Video /><Div3>Videos</Div3></NavLink>
+      </Link></LinkList>
+      <LinkList><Link href='/vito' passHref>
+      <NavLink><Vito /><Div3>Vito</Div3></NavLink>
+      </Link></LinkList>
+      <LinkList><Link href='/contact' passHref>
+      <NavLink><Contact /><Div3>Contact Me</Div3></NavLink>
+      </Link></LinkList>
     </LinkContainer>
     </Div1>
     <Div2>
