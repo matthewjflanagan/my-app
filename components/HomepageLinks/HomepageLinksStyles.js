@@ -38,7 +38,6 @@ export const LinkList = styled.li`
 export const NavLink = styled.a`
   display: flex;
   flex-direction: column;
-  padding: 2px;
   margin: 4px 2px;
   font-size: 1.5rem;
   font-weight: 600;
