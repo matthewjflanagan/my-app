@@ -19,7 +19,7 @@ export const LinkContainer = styled.ul`
   margin: 5px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   text-align: center;
 `
@@ -36,6 +36,8 @@ export const LinkList = styled.li`
 
 // Navigation Links
 export const NavLink = styled.a`
+  display: flex;
+  flex-direction: column;
   margin: 4px;
   font-size: 1.5rem;
   font-weight: 600;

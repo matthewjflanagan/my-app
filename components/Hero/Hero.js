@@ -26,7 +26,7 @@ const Hero = (props) => (
   <Section>
     <HomepageLinks />
       <SectionTitle>
-        Welcome to my Portfolio!
+        Hello Friends!
       </SectionTitle>
       <div className="slide-container">
         <Zoom {...zoomOutProperties}>
