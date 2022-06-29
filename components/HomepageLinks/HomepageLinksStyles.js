@@ -29,7 +29,7 @@ export const LinkContainer = styled.ul`
 `
 
 // Links Container
-export const LinkList = styled.li`
+export const LinkList = styled.ul`
   margin-top: 5px;
     opacity: 0.8;
   &:hover {

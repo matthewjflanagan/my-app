@@ -44,6 +44,7 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider />
       <SectionTitle>Professional Career</SectionTitle>
       <SectionText>
         Received a certificate in full stack development from Georgia Tech University, with newly developed skills in creating responsive web designs.

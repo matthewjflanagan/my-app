@@ -53,23 +53,48 @@ const HomepageLinks = () => (
   <>
   <Div1>
     <LinkContainer>
-      <LinkList><Link href='/project' passHref>
-      <NavLink><Webpage /><Div3>Projects</Div3></NavLink>
-      </Link></LinkList>
-      <LinkList><Link href='/blog' passHref>
-      <NavLink><Blog /><Div3>Blogs</Div3></NavLink>
-      </Link></LinkList>
-      <LinkList><Link href='/videos' passHref>
-      <NavLink><Video /><Div3>Videos</Div3></NavLink>
-      </Link></LinkList>
-      <LinkList><Link href='/vito' passHref>
-      <NavLink><Vito /><Div3>Vito</Div3></NavLink>
-      </Link></LinkList>
-      <LinkList><Link href='/contact' passHref>
-      <NavLink><Contact /><Div3>Contact Me</Div3></NavLink>
-      </Link></LinkList>
+      <LinkList>
+        <Link href='/project' passHref>
+          <NavLink as="li">
+            <Webpage />
+            <Div3>Projects</Div3>
+          </NavLink>
+        </Link>
+      </LinkList>
+      <LinkList>
+        <Link href='/blog' passHref>
+          <NavLink as="li">
+            <Blog />
+            <Div3>Blogs</Div3>
+          </NavLink>
+        </Link>
+      </LinkList>
+      <LinkList>
+        <Link href='/videos' passHref>
+          <NavLink as="li">
+            <Video />
+            <Div3>Videos</Div3>
+          </NavLink>
+        </Link>
+      </LinkList>
+      <LinkList>
+        <Link href='/vito' passHref>
+          <NavLink as="li">
+            <Vito />
+            <Div3>Vito</Div3>
+          </NavLink>
+        </Link>
+      </LinkList>
+      <LinkList>
+        <Link href='/contact' passHref>
+          <NavLink as="li">
+            <Contact />
+            <Div3>Contact Me</Div3>
+          </NavLink>
+        </Link>
+      </LinkList>
     </LinkContainer>
-    </Div1>
+  </Div1>
     <Div2>
     <LinkContainer>
       <LinkList>

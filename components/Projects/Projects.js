@@ -7,7 +7,6 @@ import { AiFillGithub } from 'react-icons/ai';
 
 const Projects = () => (
   <Section nopadding id="projects">
-    <SectionDivider />
     <SectionTitle>Projects</SectionTitle>
     <GridContainer>
       {projects.map(({ id, image, title, description, tags, source, visit}) => (
