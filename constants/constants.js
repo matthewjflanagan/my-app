@@ -44,7 +44,15 @@ export const projects = [
     visit: 'https://matthewjflanagan.github.io/JOBS-4-MORE/',
     id: 4,
   },
-
+  {
+    title: 'Weather Dashboard',
+    description: "Search any city for thte current weather and 5 day forecast!",
+    image: '/images/weatherDashboard.png',
+    tags: ['HTML', 'CSS', 'Javascript', 'Third-party API'],
+    source: 'https://github.com/matthewjflanagan/Weather-Dashboard',
+    visit: 'https://matthewjflanagan.github.io/Weather-Dashboard/',
+    id: 5,
+  },
 ];
 
 export const TimeLineData = [
