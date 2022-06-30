@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'Weather Dashboard',
     description: "Search any city for thte current weather and 5 day forecast!",
-    image: '/images/weatherDashboard.png',
+    image: '/images/weatherDashboard.PNG',
     tags: ['HTML', 'CSS', 'Javascript', 'Third-party API'],
     source: 'https://github.com/matthewjflanagan/Weather-Dashboard',
     visit: 'https://matthewjflanagan.github.io/Weather-Dashboard/',

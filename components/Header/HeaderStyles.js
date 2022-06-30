@@ -12,7 +12,14 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
 `;
+
 export const Div2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+`;
+
+export const Div3 = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
