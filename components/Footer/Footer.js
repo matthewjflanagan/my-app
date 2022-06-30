@@ -13,7 +13,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
-        <LinkItem href="mailto:mattlflanagan67@gmail.com">mattflanagan67@gmail.com</LinkItem>
+        <LinkItem href="mailto:mattlflanagan40@gmail.com">mattflanagan40@gmail.com</LinkItem>
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Message</LinkTitle>
@@ -28,7 +28,7 @@ const Footer = () => {
             <Link href="https://github.com/matthewjflanagan" passHref>
               <a className='SocialIcons'><AiFillGithub size="3rem" /></a>
             </Link>
-            <Link href="https://www.linkedin.com/in/matthew-flanagan-13253a223/" passHref>
+            <Link href="https://www.linkedin.com/in/matthew-flanagan-6b27aa131/" passHref>
               <a className='SocialIcons'><AiFillLinkedin size="3rem" /></a>
             </Link>
             <Link href="https://youtube.com" passHref>
