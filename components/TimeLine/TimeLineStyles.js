@@ -54,7 +54,7 @@ ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
   }
 `
 
-export const CarouselItemTitle = styled.h5`
+export const CarouselItemTitle = styled.h1`
   font-weight: bold;
   font-size: 24px;
   line-height: 16px;

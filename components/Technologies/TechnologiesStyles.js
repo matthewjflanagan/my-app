@@ -60,7 +60,7 @@ export const ListContainer = styled.div`
   }
 `
 
-export const ListTitle = styled.h4`
+export const ListTitle = styled.h1`
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;

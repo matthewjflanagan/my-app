@@ -46,7 +46,7 @@ export const TitleContent = styled.div`
 `;
 
 
-export const HeaderThree = styled.h3`
+export const HeaderThree = styled.h1`
   font-weight: 500;
   letter-spacing: 2px;
   color: ${props => props.theme.colors.primary1};

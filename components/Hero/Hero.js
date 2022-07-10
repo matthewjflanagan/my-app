@@ -42,11 +42,11 @@ const Hero = (props) => (
         </Zoom>
       </div>
       <SectionText>
-      Below you will find the technologies I have experience in, my professional acheivements, and points of interest about me. 
+      <strong>Below you will find the technologies I have experience in, my professional acheivements, and points of interest about me.</strong> 
       </SectionText>
       <ButtonBack onClick={() => window.location = '/images/Resume.pdf'}>Resume</ButtonBack>
-      <ButtonBack onClick={() => window.location = '/images/certificate.pdf'}>Georgia Tech Certificate</ButtonBack>
-      <ButtonBack onClick={() => window.location = '/images/USC_eDiploma.pdf'}>USC Diploma</ButtonBack>
+      <ButtonBack onClick={() => window.location = '/images/certificate.pdf'}><strong>Georgia Tech Certificate</strong></ButtonBack>
+      <ButtonBack onClick={() => window.location = '/images/USC_eDiploma.pdf'}><strong>USC Diploma</strong></ButtonBack>
   </Section>
 );
 

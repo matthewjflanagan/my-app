@@ -16,7 +16,7 @@ export const Box = styled.div`
   padding: 6px;
   margin: 10px;
 `
-export const BoxTitle = styled.h5`
+export const BoxTitle = styled.h1`
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -44,7 +44,7 @@ export const Join = styled.div`
   padding-bottom: 32px;
 `
 
-export const JoinText = styled.h5`
+export const JoinText = styled.h2`
   display: flex;
   font-size: 24px;
   line-height: 40px;

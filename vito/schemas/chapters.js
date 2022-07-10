@@ -21,6 +21,7 @@ export default {
                     name: "cover",
                     title: "Chapter Cover",
                     type: "image",
+                    alt: "Chapter Cover",
                     options: {
                         hotspot: true
                     }

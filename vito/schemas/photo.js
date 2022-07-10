@@ -12,6 +12,7 @@ export default {
             name: "image",
             title: "Image",
             type: "image",
+            alt: "vito images",
             options: {
                 hotspot: true,
             }
